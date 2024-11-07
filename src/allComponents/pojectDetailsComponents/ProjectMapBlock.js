@@ -14,6 +14,7 @@ const ProjectMapBlock = ({data, onChange, setBasicDetails}) => {
             setMapSearchValue("");
         }
     },[data.address]);
+    
 
     return (
         <Fragment>
