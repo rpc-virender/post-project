@@ -1,0 +1,173 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+}
+
+.ver-order{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hor-order{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.space-between-order{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainHeaderCon{
+    flex-direction: row;
+    width: 100%;
+    flex-shrink: 0;
+    background: var(--white-3, #FFF);
+    box-shadow: 0px 4px 20px 0px rgba(171, 171, 171, 0.10);
+    padding:10px;
+    padding-left:28px;
+    padding-right:28px;
+    height:66px;
+}
+
+.mainHeaderCon a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.headerLogoImg{
+    flex-shrink: 0;
+    height:65px;
+}
+
+.userNameDetailsCon{
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-end;
+    align-items:flex-end;
+}
+
+.userName{
+    color: var(--black-2, #333);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23px; /* 95.833% */
+}
+
+.userType{
+    color: var(--grey-2, #767270);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23px; /* 95.833% */
+}
+
+.profileImgCon{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    border:2px solid #B6CEAF;
+    margin-left:11px;
+}
+
+.profileImg{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius:30px;
+}
+
+.logoFotWeb{
+    display: flex;
+}
+
+.logoFotMobile,
+.logoFotTab{
+    display: none;
+}
+
+/* 38% */
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+    .mainHeaderCon{
+        padding:8px;
+        padding-left:28px;
+        padding-right:28px;
+        height:62px;
+    }
+    
+    .userName{
+        font-size: 18px;
+    }
+    
+    .userType{
+        font-size: 15px;
+    }
+    .profileImgCon{
+        width: 36px;
+        height: 36px;
+        border:2px solid #B6CEAF;
+        margin-left:10px;
+    }
+
+    .logoFotMobile,
+    .logoFotWeb{
+        display: none;
+    }
+    
+    .logoFotTab{
+        display: flex;
+        height:30px;
+    }
+    
+}
+
+/* 50% */
+@media only screen and (max-width: 600px) {
+    .mainHeaderCon {
+        padding:5px;
+        padding-left:14px;
+        padding-right:14px;
+        height:auto;
+    }
+    
+    .userName{
+        font-size: 14px;
+    }
+    .userType{
+        font-size: 12px;
+    }
+    
+    .profileImgCon{
+       width: 32px;
+        height: 32px;
+        margin-left:9px;
+    }
+
+    .logoFotTab,
+    .logoFotWeb{
+        display: none;
+    }
+    
+    .logoFotMobile{
+        display: flex;
+        height:28px;
+    }
+
+    .headerLogoImg{
+        flex-shrink: 0;
+        height:50px;
+    }
+}

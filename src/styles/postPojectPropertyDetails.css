@@ -1,0 +1,3339 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-style: normal;
+}
+
+.propertyTypeHtmlTableCon {
+  /* width: auto; */
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-top: 21px;
+}
+
+thaed{
+  position:sticky;
+  top:0;
+}
+
+.pdTopContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.towerNameColBlock{
+  width:100%;
+  display:flex;
+}
+
+.towerTableBlock{
+  overflow-x:auto;
+  height: 20px;
+  overflow-y:hidden;
+  min-width:56px;
+  white-space:nowrap;
+}
+
+.towerTableBlock::-webkit-scrollbar {
+  display: none;
+}
+
+.posProjPropDetailsStaticCon {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding-top: 30px;
+}
+
+.posProjPropDetailsBackIcon {
+  width: 28px;
+  height: 28px;
+  margin-right: 20px;
+}
+
+.postProjectPropDetailsBottomCon {
+  position: relative;
+  top: 10px;
+  width: 100%;
+  padding-left: 3%;
+  margin-top: 20px;
+  display:flex;
+  flex-direction:column;
+  padding-right: 3%;
+}
+
+.pdTopContainer h3 {
+  color: #242424;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 23px;
+  margin-bottom: 20px;
+  white-space: normal;
+}
+
+.pdTopContainer span {
+  color:#291A82;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 23px;
+}
+
+.propertyTypeBtn {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--secondary-blue-light, #ecf7ff);
+  border: none;
+  padding-left: 22px;
+  padding-right: 22px;
+  height: 48px;
+  position:relative;
+}
+
+.propertyTypeBtn span{
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.propertyTypeBtn:focus {
+  outline: none;
+}
+
+.selectedTypeBoX {
+  border: 3px solid blue;
+  border-image: linear-gradient(0deg, white, rgb(66, 228, 250)) 1;
+}
+
+.selectedTypeBoX span{
+  font-weight: 600;
+  color:#000000;
+}
+
+.propertyTypeBtn:hover {
+  border: 3px solid blue;
+  border-image: linear-gradient(0deg, white, rgb(66, 228, 250)) 1;
+}
+
+.propertyTypeName {
+  color: #000;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 23px;
+  white-space: nowrap;
+}
+.SubPropertyTypeTable {
+  color: #291A82;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top:5px;
+}
+
+.SpanPropertyTypeHeader {
+  color: #222B32;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.PropertyTypetableHeader {
+  color: #242424;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.propertyTypeImage {
+  width: 27px;
+  height: 27px;
+  margin-left: 16px;
+}
+
+.propertyTypeBtnCon {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap:14px;
+}
+
+.propertyNoOfFieldConMainCon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.pdBottomContainer {
+  width: 100%;
+  padding-top: 44px;
+  display:flex;
+  flex-direction:column;
+}
+
+.pdBottomContainer h3 {
+  color: #242424;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.SelectPhaseHeadingAbove{
+  color: #242424 !important;
+  font-size: 22px !important;
+  font-weight: 600;
+}
+
+.PpdInputOuterContainerClassName {
+  width: 20%;
+  margin-right: 2%;
+  position: relative;
+  min-width:380px;
+  margin-bottom:30px;
+}
+
+.propertyDetailsNoOfFieldCon {
+  position: relative;
+  width: 100%;
+  flex-shrink: 0;
+  margin-right: 5px;
+}
+
+.noOfFloarsInputOuterContainer {
+  width: 100vw;
+}
+
+.propertyDetailsNoOfField {
+  font-size: 18px;
+  color: #000000;
+  outline: none;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 0.8px solid var(--grey-4, #c9c9c9);
+  background: #fff;
+  user-select: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.propertyDetailsAnimatedLabel {
+  color: var(--black-3, #000000);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 10px;
+  position: absolute;
+  left: 10px;
+  top: 23px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.propertyDetailsNoOfField:focus {
+  border: 0.8px solid var(--brand-green-primary, #148b16);
+}
+
+/* .propertyDetailsNoOfField:valid ~ .propertyDetailsAnimatedLabel, */
+.propertyDetailsNoOfField:focus ~ .propertyDetailsAnimatedLabel{
+  top: -1px;
+  left: 15px;
+  font-size: 15px;
+  padding: 0 2px;
+  background: white;
+  color: #148b16;
+  height: 20px;
+  white-space:nowrap;
+  max-width:90%;
+  overflow-x:hidden;
+  overflow-y:hidden;
+  display:flex;
+  align-items:center;
+}
+
+.thrd-conter {
+  width: 32%;
+}
+
+.inputRangeWithLabels {
+  width: 100%;
+  height: 4px;
+  flex-shrink: 0;
+  margin-bottom: 10px;
+
+  border-radius: 13px;
+  background: linear-gradient(90deg, #cbe9ff 0%, #70c3ff 100%);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.09) inset;
+  -webkit-appearance: none;
+}
+
+.inputRangeWithLabels::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+
+  background: #f1f1f1;
+  cursor: pointer;
+
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  margin-bottom: 0px;
+
+  fill: var(--white-1, #f1f1f1);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.09) inset;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.16));
+}
+
+.inputRangeWithLabels::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  cursor: pointer;
+
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.09) inset;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.16));
+}
+
+.inputRangeWithLabels::-ms-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #f1f1f1;
+  cursor: pointer;
+
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.09) inset;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.16));
+}
+
+
+.alivationInputClass {
+  width: 50px;
+  height: 24px;
+  flex-shrink: 0;
+
+  border-radius: 2px;
+  border: 0.6px solid var(--grey-4, #c9c9c9);
+  background: var(--white-3, #fff);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05) inset;
+
+  color: var(--black-3, #505050);
+  font-size: 15px;
+  font-weight: 400;
+  padding-left: 5px;
+}
+
+.basementHeading {
+  color: var(--grey-2, #767270);
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 9px;
+}
+
+.groundRadioInputClass {
+  width: 21px;
+  height: 21px;
+  margin-right: 6px;
+  cursor: pointer;
+  accent-color: #65bb67;
+  border: 0.2rem solid white;
+}
+
+.noOfFloorsInputClass {
+  width: 405px;
+  height: 35px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #c9c9c9;
+  color: var(--black-3, #505050);
+  font-size: 24px;
+  font-weight: 300;
+  outline: none;
+}
+
+.groundLabel {
+  margin-right: 32px;
+  margin-top: 6px;
+}
+
+.elevationsInnerFirstCon {
+  margin-right: 37px;
+  margin-bottom: 18px;
+}
+
+.elevationsInnerCon {
+  height: 74px;
+}
+
+.datalist {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.datalistOption {
+  padding: 0;
+  color: var(--black-3, #505050);
+  font-size: 14px;
+  font-weight: 400;
+  cursor:pointer;
+}
+
+.elevationsMainCon {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 73px;
+  margin-top: 24px;
+  margin-left: -50px;
+}
+
+.elevationsInnerLastCon {
+  margin-bottom: 70px;
+}
+
+.propdetailsSpanText {
+  color: #291A82;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.propertyTypeTableMainCon {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+#tableFloorplansHeader{
+  scroll-margin-top: 100px;
+}
+
+.propertyTypeTableHeaderCon {
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* position:sticky;
+  top:0px */
+}
+
+thead{
+  position:sticky;
+  top:0;
+  z-index:1
+}
+
+.requiredStar{
+  font-size:16px;
+}
+
+/* for only in preview page table class */
+.propertyTypeTableMainConPreviewPge {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 24px;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+.propertyTypeHtmlTableConPreviewPage tbody {
+  display: block;
+  overflow: auto;
+  /* max-height: 38vh; */
+}
+
+#IdForPreviewTable {
+  /* width */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height:10px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    width: 5.955px;
+    box-shadow: inset 0 0 5px #d9d9d9;
+    border-radius: 4px;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #c0bfbf;
+    width: 10.062px;
+    cursor:pointer;
+  }
+}
+
+.tableonheadingClick {
+  color: var(--Grey-2, #767270);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.tableMainonclckHeading {
+  color: #4d6677;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.headerBlock {
+  width: 100%;
+  max-width: 100px;
+  color: #242424;
+  font-size: 15px;
+  font-weight: 500;
+  display: flex;
+  height: 54px;
+  padding-left: 5px;
+  padding-right: 5px;
+  align-items: center;
+  border: 1px solid #A0D7FF;
+  border-right:none;
+  background: #ECF7FF;
+}
+
+.superBuildUpArea {
+  max-width: 142px;
+  min-width: 142px;
+}
+
+.carpetArea {
+  max-width: 122px;
+  min-width: 122px;
+}
+
+.propertyTypeTableInputsCon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.scrollMepara {
+  display: none;
+  color: var(--Grey-2, #767270);
+  font-size: 20px;
+  font-weight: 700;
+}
+.scrollAddmoreCOn {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.inputBlock {
+  width: 100%;
+  max-width: 100px;
+  height: 54px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 12px;
+  color: #202020;
+  font-size:16px;
+  font-weight:600;
+  border: 1px solid #98A5B8;
+  background: #FCFCFC;
+  border-right:none;
+  padding:10px;
+}
+
+.overviewTableFirst{
+  border-left: 1px solid #e0e0e0;
+}
+
+.propTypeDropdown {
+  color: var(--grey-3, #b5abac);
+  color: var(--Grey-1, #666);
+  font-size: 16px;
+  font-weight: 300;
+  width: 114px;
+  height: 34;
+  border: none;
+  margin-bottom: 15px;
+  padding-left: 10px;
+  background: transparent;
+}
+
+.uploadMediaIcon {
+  margin-left: 8px;
+}
+
+.viewIconsCon {
+  display: flex;
+  justify-content: space-around;
+}
+
+.uploadFloorPlanButton {
+  color: var(--secondary-blue-1, #0073c6);
+  font-size: 15px;
+  font-weight: 500;
+  border: none;
+  background: transparent;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.uploadFloorPlanButton:focus {
+  outline: none;
+}
+
+.viewTools {
+  cursor: pointer;
+}
+
+.propTypesAddMoreBtn {
+  color: var(--secondary-blue-1, #0073c6);
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 44px;
+  cursor: pointer;
+
+  border-radius: 4px;
+  border: 0.8px solid #0073C6;
+  background: #FAFAFA;
+  padding:6px;
+}
+
+.propTypesAddMoreBtn:focus {
+  outline: none;
+}
+
+.bottomTableCon {
+  width: 100%;
+  position: relative;
+  left: 0px;
+  margin-top: 20px;
+}
+
+.bottomTable {
+  width: 142px;
+  height: 54px;
+}
+
+.bottomtotalPlotAreaTable {
+  width: 250px;
+}
+
+.dropDownCon {
+  width: 114px;
+  height: 200px;
+  top: 190px;
+  right: 8px;
+  margin-top: -195px;
+}
+
+.dropDownConArrow {
+  left: -20px;
+  top: -5px;
+  width: 10px;
+  height: 10px;
+}
+
+.propTypeDropdown:focus ~ .dropDownConArrow {
+  transform: rotate(180deg);
+}
+
+.propTypeDropdownInputCon {
+  position: relative;
+  top: -8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 114px;
+  height: 37px;
+  padding-top: 10px;
+}
+
+.dropDownItems {
+  padding-left: 10px;
+}
+
+.propTableMediaCon svg {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  position:relative;
+  top:4px;
+}
+
+.propTableMediaCon span {
+  margin-left: 2px;
+  white-space: nowrap;
+  color: #0073c6;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.propTableNoMediaName{
+  color: #148B16 !important;
+}
+
+.rowDetailspreviewPopupCon {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100%;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.3);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.rowDetailsPreviewBox {
+  width: 908px;
+  height: 300px;
+  flex-shrink: 0;
+
+  border-radius: 8px;
+  background: #fff;
+
+  /* popup */
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 19px;
+  padding-left: 19px;
+  padding-right: 24px;
+}
+
+.previewImgHeading {
+  color: var(--brand-green-primary, #148b16);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 23px;
+  text-decoration-line: underline;
+}
+
+.crossIconForInnerCon {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+}
+
+.rowDetailsImage {
+  width: 170px;
+  height: 170px;
+  flex-shrink: 0;
+}
+
+.rowPreviewDetailsItemsCon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.rowPreviewDetailsItem {
+  color: var(--blue-grey, #a3aed0);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  margin-right: 24px;
+  margin-bottom: 20px;
+}
+
+.rowPreviewDetailsItem span {
+  color: var(--grey-1, #666);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.rowDetailsImageCon {
+  width: 261px;
+  height: 263px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 22px;
+
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+.rowHeadingRightIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-left: 5px;
+  margin-bottom: 4px;
+}
+
+.rowDetailsImageHeading {
+  display: inline-flex;
+  padding: 2px 10px 2px 11px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background: var(--white-3, #fff);
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.09);
+  color: var(--blue-grey, #a3aed0);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 23px;
+  align-self: flex-start;
+  margin-left: 26px;
+  margin-top: 15px;
+  margin-bottom: -10px;
+}
+
+.rowLoaderMainCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: white;
+}
+
+.rowDeleteStatusMainCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  top: -54px;
+  margin-bottom: -35px;
+  background: white;
+  background: rgba(255, 211, 211, 0.8);
+  height: 54px;
+}
+
+.rowEditStatusMainCon {
+  background: white;
+}
+
+.rowLoaderCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 7px;
+}
+
+.rowLoaderGif {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  margin: -19px;
+  margin-right: 5px;
+}
+
+.rowLoaderMeesage {
+  color: var(--Grey-1, #666);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.6px;
+  text-transform: capitalize;
+}
+
+.rorStatusComponent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.propertyTableEditIcon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.editButtonForPropCard {
+  color: var(--Secondary-Blue-1, #0073c6);
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  border: none;
+  background: transparent;
+  white-space: nowrap;
+}
+
+.editButtonForPropCard svg {
+  margin-bottom: 7px;
+  margin-left: 10px;
+}
+
+.rangeSliderMainContainer {
+  width: 100%;
+}
+
+.actionConOne {
+  display: none;
+}
+
+.actionConTwo {
+  display: flex;
+  min-width:94px;
+}
+
+.prevwColone{
+  position: sticky;
+  left: 43px;
+}
+.prevwFloorplan{
+  position: sticky;
+  left: 43px;
+}
+
+.floorplanContainerTwo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-right: 0;
+  white-space: nowrap;
+  padding:0;
+
+}
+
+.colOne {
+  padding: 0px;
+  position: sticky;
+  left: 0;
+  text-align:center;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-width:70px;
+  max-width: 70px;
+}
+
+.colOneUnitNumber {
+  display: none;
+}
+
+.colTwoUnitNumber {
+  display: flex;
+}
+
+.styleForUploadIcon {
+  width: 18px;
+  height: 18px;
+}
+
+.allPricingPropBoxsConInDropdownACRMAXMIN {
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 6px;
+  margin-top: 26px;
+  align-items:flex-start;
+  flex-direction:column;
+  padding:16px;
+  border-radius: 6px;
+  border: 0.5px solid #98A5B8;
+  background: var(--grey-gradient, linear-gradient(94deg, #F3F4F5 -0.01%, #F3F3F3 99.99%));
+  box-shadow: 0px 4px 20px 0px rgba(171, 171, 171, 0.10);
+  margin-right:auto;
+  max-width:955px;
+}
+
+.pricingPropBoxInDropdownACRMAXMIN {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1%;
+  flex-direction:column;
+  border-radius: 6px;
+  border: 0.5px solid #98A5B8;
+  background: var(--grey-gradient, linear-gradient(94deg, #F3F4F5 -0.01%, #F3F3F3 99.99%));
+  box-shadow: 0px 4px 20px 0px rgba(171, 171, 171, 0.10);
+  padding:12px;
+  max-width:552px;
+}
+
+.pricingPropBoxHeadingACRMAXMIN {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: #ecf7ff;
+  padding-right: 1%;
+  padding-left: 1%;
+
+  color: #505050;
+  font-size: 16px;
+  font-weight: 600;
+  margin-right: 1%;
+  text-align: center;
+  white-space: nowrap;
+  min-height: 69px;
+  height: 100%;
+  max-height: 269px;
+}
+
+.pricingPropBoxTextACRMAXMIN {
+  color: #394c59;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  top: 4px;
+}
+
+.pricingInputClassInputOuterConACRMAXMIN {
+ width:auto;
+}
+
+.raraFields {
+  width: 100%;
+  min-width:277px;
+}
+
+.pricingInputClassInputConACRMAXMIN {
+  width: 100%;
+}
+
+.pricingInputClassInputConACRMAXMIN div svg {
+  position:relative;
+  top:13px;
+  right:12px;
+  background:white;
+}
+
+.pricingInputInputSecondOuterConACRMAXMIN {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pricingInputClassInDropdownACRMAXMIN {
+  border-radius: 5px;
+  border: 0.6px solid #4d6677;
+  background: #fff;
+  color: #303030;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 7px;
+  width: 100%;
+}
+
+.pricingLableACRMAXMIN {
+  color: #242424 !important;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom:4px;
+}
+
+.detailsDropdownOthersConACRMAXMIN {
+  padding: 1%;
+  width: 100%;
+  border-radius: 12px;
+  border-bottom: 0.6px solid #98a5b8;
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(112, 144, 176, 0.08);
+  margin-bottom: 2%;
+}
+
+.postPropMinAndMaxPriceInputMainCon {
+  max-width:242px;
+}
+
+.postPropMinAndMaxPriceInputCon {
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
+  border: 0.6px solid #4d6677;
+  background: #fff;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 2%;
+  height: 29px;
+  margin-bottom: 3px;
+  scroll-margin-top:100px;
+}
+
+.postPropMinAndMaxPriceInput {
+  border: none;
+  color: #303030;
+  font-size: 18px;
+  font-weight: 600;
+  width: 100%;
+  height: 25px;
+}
+
+.postPropMinAndMaxPriceRupeesText {
+  color: var(--Heading-blue-grey, #757c95);
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 2%;
+  white-space: nowrap;
+}
+
+.postPropMinAndMaxPriceDisplayText {
+  color: #4D6677;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.postPropMinAndMaxPriceInputFieldCon {
+  width: 100%;
+}
+
+.postPropMinAndMaxPriceInputOuterCon {
+  width: 95%;
+}
+
+.propertyDetailsLandAreaStaticLable {
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  left: 85%;
+  white-space:nowrap;
+}
+
+.frontIconClassName{
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  position: absolute;
+  z-index: 1;
+  top: 16px;
+  white-space:nowrap;
+  padding-left:8px;
+}
+
+.basePriceClassName{
+  padding-left:25px !important;
+}
+
+.maxAndMinPriceCurrencyDropdownField {
+  width: 100%;
+  border: none;
+
+  font-size: 15px;
+  font-weight: 700;
+  color: gray;
+}
+
+.maxAndMinPriceCurrencyDropdownFieldCon {
+  width: 100%;
+}
+
+.maxAndMinPriceCurrencyDropdownFieldOuterCon {
+  width: 50%;
+}
+
+.pricingPropBoxInnerRightSideConMAXMIN {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 1%;
+  gap: 1%;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+/* ApartmentTowerAndElevationCard */
+
+.apartmentTowerAndElevationCard {
+  flex-shrink: 0;
+  display: flex;
+  border-radius: 6px;
+  background: #fcfeff;
+  box-shadow: 0px 4px 20px 0px rgba(171, 171, 171, 0.1);
+  padding-right: 2%;
+}
+
+.towerDataToggogle {
+  display: flex;
+  flex-direction: column;
+  gap:34px;
+}
+
+.aptTowerAndEleCardTowerCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 6%;
+  padding: 10px;
+  gap: 10px;
+  flex-shrink: 0;
+
+  border-radius: 6px;
+  background: #ecf7ff;
+  color: #242424;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  min-width:92px;
+}
+
+.aptTowerAndEleCardRightSideCon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 22px;
+  gap: 22px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.aptTowerAndEleCardInput {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  border: 0.6px solid #4d6677;
+  background: #fff;
+  height: 36px;
+  color: #4d6677;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 5px;
+  margin-top:5px
+}
+
+.aptTowerAndEleCardInputInnerCon {
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+}
+
+.aptTowerAndEleCardInputInnerCon .inputErrorMsgCon .inputErrorMsg  {
+  position:relative;
+  top:12px;
+}
+
+.aptTowerAndEleCardInputCon {
+  height: 40px;
+}
+
+.aptTowerAndEleCardInputOuterCon {
+  display: flex;
+  /* width: 25%; */
+  justify-content: space-between;
+  min-width:200px;
+  max-width: 250px;
+}
+
+.aptTowerAndEleCardInputLable {
+  color: #148b16;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.aptTowerAndEleCardEleHeading {
+  white-space: nowrap;
+  color: var(--Grey-2, #767270);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.aptTowerAndEleCardBasementInput {
+  width: 30.505px;
+  height: 24px;
+  border-radius: 2px;
+  border: 0.6px solid var(--GREY4, #c9c9c9);
+  background: var(--White-3, #fff);
+  box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05) inset;
+  margin-left: 10px;
+  text-align:center;
+}
+
+.aptTowerAndEleCardBasementInputCon {
+  width: 100%;
+}
+
+.aptTowerAndEleCardSliderMainCon {
+  width: 100%;
+}
+
+.aptTowerAndEleCardRadioInputsMainCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  gap: 10px;
+}
+
+.aptTowerAndEleCardRadioInput {
+  width: 21px;
+  height: 21px;
+  accent-color: green;
+  position: relative;
+  bottom: 3px;
+}
+
+.aptTowerAndEleCardRadioInputCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aptTowerAndEleCardRadioInputLable {
+  color: var(--Grey-1, #666);
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 6px;
+  bottom:4px;
+  position:relative;
+}
+
+.aptTowerAndEleCardNoOfFloorInputOuterCon {
+  width: 100%;
+}
+
+.aptTowerAndEleCardRadioInputInnerCon {
+  width: 100%;
+}
+
+.aptTowerAndEleCardBasementInputInnerCon {
+  width: 100%;
+  display: flex;
+  margin-bottom:5px;
+  align-items:center;
+}
+
+.aptTowerAndEleCardBasementBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* width: 30%; */
+  flex-direction: column;
+  min-width:250px;
+  max-width: 350px;
+}
+
+.aptTowerAndEleCardGroundBlock {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 0px;
+  height:auto;
+  padding: 8px;
+  padding-top:3px;
+  padding-bottom:3px;
+  border-radius: 5px;
+  border: 0.6px solid #4D6677;
+  background: #FFF;
+}
+
+.newElevationDropdown {
+  border-radius: 2px;
+  border: 0.5px solid #C2C2C2;
+  background: rgba(250, 250, 250, 0.98);
+  color: #4D6677;
+  font-size: 16px;
+  font-weight: 600;
+  height:30px;
+}
+
+.elevationsNumberFied{
+  border-radius: 2px;
+  border: 0.5px solid #C2C2C2;
+  background: rgba(250, 250, 250, 0.98);
+  height:30px;
+  color: #4D6677;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left:10px;
+  width: 150px;
+}
+
+.elevationsNumberFied:focus,
+.newElevationDropdown:focus{
+  outline: none;
+}
+
+.elevationBlockHrLine{
+  height: 30px;
+  margin-left:8px;
+  margin-right: 8px;
+  border-left: 1px solid #98A5B8;
+}
+
+.aptTowerAndEleCardOfFloorInputCon {
+  width: 100%;
+}
+
+.apartmentTowerDetailMainCon {
+  margin-bottom: 44px;
+  /* margin-right:auto; */
+  margin-top: 20px;
+  max-width: 1400px;
+}
+
+.apartmentTowerDetailDropdownCon {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 4% 2% 4%;
+
+  border-radius: 20px;
+  border: 1px solid var(--b, #cce3f3);
+  background: var(--Secondary-Blue-Light, #ecf7ff);
+  box-shadow: 0px 4px 14px 0px rgba(116, 196, 255, 0.19);
+
+  font-size: 22px;
+  font-weight: 700;
+  user-select: none;
+}
+
+.apartmentTowerDetailArrowImg {
+  height: 40px;
+
+  transition-duration: 0.5s;
+}
+
+.apartmentTowerAndElevationCardsHoldingCon {
+  width: 100%;
+}
+
+.apartmentTowerCardsConScrollingClass {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.TowersMainHeadingCon {
+  display: inline-flex;
+  justify-content: space-between;
+  height: 54px;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 6px;
+  background: #ecf7ff;
+  width: 100%;
+  margin-bottom:20px;
+}
+
+.TowerDropDownSbtn {border: none;}
+
+.headerTowerpara {
+  color:  #242424;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.TowerDropDownICon {
+  display: none;
+}
+
+.aptTowerAndEleCardInput:focus,
+.aptTowerAndEleCardBasementInput:focus,
+.aptTowerAndEleCardRadioInput:focus,
+.maxAndMinPriceCurrencyDropdownField,
+.postPropMinAndMaxPriceInput:focus,
+.TowerDropDownICon:focus {
+  outline: none;
+}
+
+/* phases projectDetails page alone in proj*/
+
+.projectDetailsPhasesRadioCon {
+  display: flex;
+  width: 100%;
+  gap: 2%;
+  flex-wrap: wrap;
+}
+
+.phaseRadioInput {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.phaseRadioInputCon {
+  display: flex;
+  align-items: center;
+  accent-color: green;
+  margin-top: 10px;
+}
+
+.phaseRadioInputLable {
+  color: #5b5957;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.selectedPhaseRadioInput {
+  color: #148b16;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.phasesSubContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+}
+
+.phasebtn {
+  color: #4d6677;
+  font-size: 18px;
+  font-weight: 900;
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
+.phaseRadioInput:focus,
+.phasebtn:focus {
+  outline: none;
+}
+
+.DatePhases_container {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+  flex-direction:column;
+  min-width:300px;
+}
+
+.firsstPhaseInput {
+  display: flex;
+  padding: 9.5px 9px 10px 7px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2%;
+  border-radius: 5px;
+  border: 0.6px solid #4d6677;
+  background: #fff;
+  color: #303030;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 7px;
+  width: 22%;
+  height: auto;
+}
+
+.forallclassnamewidth {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 5px;
+  border: 0.6px solid #4d6677;
+  background: #fff;
+  color: #303030;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  padding: 9px 14px;
+}
+
+.thrd-conter {
+  display: flex;
+  padding: 9.5px 9px 10px 7px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2%;
+  border-radius: 5px;
+  border: 0.6px solid #4d6677;
+  background: #fff;
+  color: #303030;
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 7px;
+  width: 42%;
+  height: auto;
+}
+
+.pricingLableACRMAXMINForDate {
+  white-space: nowrap;
+  color: #242424;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.flexsPhasesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.flexsPhasesContainerfomain {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1%;
+  flex-wrap: wrap;
+  /* background: #dfdfdf; */
+  /* padding:8px;
+  border-radius:10px; */
+}
+
+.pricingPropBoxHeadingACRMAXMINFirstcon {
+  color: #242424;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  width:100%;
+}
+
+.projectPhasesTopHeadingCon{
+  display:flex;
+  width:100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap:10px
+}
+
+.projPhaseDeleteBtn{
+  display:flex;
+  align-items:center;
+  color: #242424;
+  font-size: 16px;
+  font-weight: 600;
+  padding:3px;
+  padding-left:6px;
+  padding-right:10px;
+  border:none;
+  border-radius:4px;
+  border:1px solid black;
+}
+
+.projPhaseDeleteBtn:hover{
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+}
+
+.pricingInputClassInDropdownACRMAXMINBtmunderLine {
+  border-radius: 5px;
+  border: 0.6px solid #4d6677;
+  background: #fff;
+  padding: 4%;
+  color: #242424;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.forallclassnamewidth:focus,
+.pricingInputClassInDropdownACRMAXMINBtmunderLine:focus {
+  outline: none;
+}
+
+.pricingLableACRMAXMIN {
+  color: #148b16;
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.phases-second-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pricingInputClassInDropdownACRMAXMINNoneBorder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  border: none;
+  color: #4D6677;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 600;
+  width: 100%;
+}
+
+.pricingInputClassInputOuterConACRMAXMINNoneBorder {
+  height: auto;
+}
+
+.pricingInputClassInDropdownACRMAXMINNoneBorder:focus,
+TowerDropDownSbtn:focus {
+  outline: none;
+}
+.TowerDropDownS {
+  border: none;
+}
+
+.delete_containerphases {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  /* width: 10%; */
+  margin-right: 4%;
+  gap: 0.5%;
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 2%;
+}
+
+.bottomOfHeadingPhase {
+  color: #929292;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.lengthAndBreadth {
+  min-width: 155px;
+}
+
+.PropertyTypeTableErrMsg {
+  color: #ff1f00;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  position: relative;
+  bottom: 70px;
+  margin-bottom: -33px;
+}
+
+.MinAndMaxValuesErrMsg {
+  color: #ff1f00;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  margin-top:9px;
+}
+
+.overviewTableHeader1 {
+  width: 15%;
+  max-width: 100px;
+}
+
+.overviewTableHeader2 {
+  width: 20%;
+  max-width: 200px;
+}
+
+.propertyPhasesBtn {
+  border-radius: 4px;
+  background: var(--Secondary-Blue-Light, #ecf7ff);
+  border: none;
+  white-space: nowrap;
+  color: #000;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  text-transform:capitalize;
+  padding-left:22px;
+  padding-right:22px;
+}
+
+.propertyPhasesBtnSelected {
+  border: 1px solid var(--b, #0073c6);
+  box-shadow: 0px 4px 14px 0px rgba(116, 196, 255, 0.19);
+  font-weight: bold;
+}
+
+.propertyPhasesBtnCon {
+  width: auto;
+  margin-right: 4px;
+}
+
+.phasesPostPropCon {
+  width: 100%;
+  margin-bottom: 44px;
+  margin-top:1%;
+}
+
+.phasesPostPropCon h3 {
+  color: var(--Black-2, #333);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 1%;
+}
+
+.phasesMessageTop {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  text-align: right;
+  display: flex;
+  gap: 1%;
+  align-items: center;
+  justify-content: flex-end;
+  background: white;
+  z-index: 2;
+  white-space:nowrap;
+}
+
+.phasesMessageTop span {
+  color: #148b16;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  /* margin-left: 8px; */
+}
+
+.phasesMessageTop img {
+  width: 24px;
+  height: 24px;
+  margin-right: 1%;
+}
+
+.phaseNotificationMsg {
+  width: 100%;
+  color: #929292;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 1%;
+}
+
+.bankDetailsSubHeading {
+  font-size: 24px;
+}
+
+.bankDetailsSubContant {
+  font-size: 20px;
+}
+
+.forPlotColumnTwo{
+  display: flex;
+}
+
+.colTwo {
+    min-width:120px;
+    position: sticky;
+    left: 70px;
+    border-right:1px solid gray;
+}
+
+.floorplanContainerTwo{
+  min-width:98.17px;
+}
+
+.basePriceInputLable {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+  color: #148B16;
+}
+
+.inWordsPriveForBP{
+  position:relative;
+  bottom:8px;
+  font-size:14px;
+}
+
+
+/* Select checkbox css */
+.multiselect {
+  width: 47%;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.basementDropdown {
+  display: none;
+  border: 1px gray solid;
+  padding-top:5px;
+  position:absolute;
+  z-index:2;
+  background:white;
+  user-select:none;
+  margin-right:6%;
+}
+
+.basementDropdown label {
+  display: block;
+  padding-left:10px;
+  font-weight:bold;
+  font-size:16px;
+  cursor:pointer;
+}
+
+.basementDropdown label input {
+  margin-right:2px;
+  cursor:pointer;
+}
+
+.innerOptionBtns:hover{
+  background-color: #1e90ff;
+  color:white;
+}
+
+.optionBtnSelected{
+  background-color: #1e90ff !important;
+  color:white;
+}
+
+.innerOptionBtns{
+  width:100%;
+  border:none;
+  background:transparent;
+  text-align:left;
+  padding-left:10px;
+  font-weight:bold;
+  font-size:16px;
+  margin-bottom:2px;
+  cursor:pointer;
+}
+
+.custumOptionDropdownClass{
+  font-weight: 600;
+}
+
+.csvUploadBoxMainCon{
+  border-radius: 10px;
+  background: #F1F5F8;
+  padding:8px;
+  margin-top:20px;
+  margin-right:auto;
+  padding-right:40px;
+}
+.csvUploadBoxInnerCon{
+  color: #242424;
+  font-size: 18px;
+  font-weight: 600;
+  display:flex;
+  gap:8px;
+  margin-bottom:11px;
+}
+
+.csvUploadBoxInnerCon span{
+  color: #148B16;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 600;
+  white-space:nowrap;
+}
+
+.csvUploadBtn{
+  border-radius: 6px;
+  border: 1px solid #0073C6;
+  background: #FFF;
+  color: #0073C6;
+  font-size: 16px;
+  font-weight: 600;
+  padding:2px;
+  padding-left:6px;
+  padding-right:6px;
+  white-space:nowrap;
+}
+
+.csvUploadBoxInnerText{
+  color: #242424;
+  font-size: 18px;
+  font-weight: 600;
+  display:flex;
+  flex-wrap:wrap;
+  gap:4px;
+}
+
+.csvUploadBoxInnerText span{
+  color: #0073C6;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.cvgPopupBottomCon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 1.5px dashed #0073C6;
+  background: rgba(250, 250, 250, 0.67);
+  display:flex;
+  flex-direction:column;
+  align-self:center;
+  padding:15px;
+  width:100%;
+}
+
+.cvgPopupBottomCon svg{
+  width: 83px;
+  height: 81px;
+  flex-shrink: 0;
+  margin-bottom:24px;
+}
+
+.cvgPopupBottomCon p{
+  color: #000;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.cvgPopupBottomCon span{
+  color: #333;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom:16px;
+}
+
+.csvPopupUploadBtn{
+  border-radius: 5px;
+  border: none;
+  background: #0073C6;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding:8px;
+  padding-left:10px;
+  padding-right:10px;
+  cursor: pointer;
+}
+
+.csvUploadSubmitBtn{
+  color: #0073C6;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding:7px;
+  padding-left:10px;
+  padding-right:10px;
+  border-radius: 5px;
+  border: 1px solid #0073C6;
+  background: #FFF;
+  cursor: pointer;
+}
+
+.csvPopupInnerPopupCon{
+  text-align:center;
+  padding:33px !important;
+  max-width:491px !important;
+}
+
+.csvPopupSuccessCon{
+ padding:0 !important;
+}
+
+.csvPopupSuccessTopCon{
+  background: linear-gradient(270deg, #72B800 0.13%, #AAE051 24.8%, #E1FFAF 50.42%, #AAE051 76.35%, #72B800 99.99%);
+  width:100%;
+  height: 126px;
+  display:flex;
+  align-items:flex-start;
+  justify-content:flex-end;
+}
+
+.csvPopupSuccessCrossIcon{
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  cursor:pointer;
+  margin:10px;
+}
+
+.csvPopupSuccessBottomCon{
+  position:relative;
+  top:-63px;
+  padding-right:10px;
+  padding-left:10px;
+  margin-bottom:-33px;
+}
+
+.csvPopupSuccessSvg{
+  width: 127px;
+  height: 127px;
+  flex-shrink: 0;
+}
+
+.csvPopupSuccessHeading{
+  color: #242424;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700 !important;
+}
+
+.csvPopupSuccessText{
+  color: #242424;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600 !important;
+  line-height: 32px;
+}
+
+.csvPopupSuccessNote{
+  color: #148B16;
+  text-align: center;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.csvPopupHeadingAndCrossCon{
+  margin-bottom:26px;
+  
+}
+
+.csvPopupHeadingAndCrossCon h3{
+  color: #000;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.csvPopupHeadingAndCrossCon svg{
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+}
+
+.csvPopupUploadBtnsCon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.csvPopupUploadedFileCon{
+    border-radius: 13px;
+    background: rgba(45, 167, 255, 0.13);
+    display: flex;
+    margin-bottom: 10px;
+    padding-left:10px;
+    padding-right:10px;
+    text-align:left;
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+  padding:6px;
+}
+
+.csvPopupUploadedFileCon svg{
+  width: 21px;
+  height: 100%;
+  position:relative;
+  margin:auto;
+}
+
+.csvPopupUploadedFile{
+  color: #333;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+}
+
+.csvPopupUploadedPhaseName{
+  color: green !important;
+  font-size: 18px;
+  font-weight: 600 !important;
+  white-space:nowrap;
+}
+
+.csvPopupUploadedFile span{
+  color: var(--Black-3, #505050);
+  font-size: 17px !important;
+  font-weight: 600;
+  white-space:nowrap;
+}
+
+.csvPopupFileBinIcon{
+  cursor: pointer;
+  margin-left: 20px !important;
+}
+
+.csvErrorMsg{
+  color: #F00 !important;
+  font-size: 18px !important;
+  font-style: italic !important;
+  font-weight: 500 !important;
+  text-align:left  !important;
+  display:flex;
+  gap:8px;
+  border-radius: 10px;
+  background: #FFF0F0;
+  padding:8px;
+  padding-left:10px;
+  padding-right:10px;
+  margin-bottom:18px;
+}
+
+.csvErrorMsg svg{
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.propTableRowsHoldingCon{
+  max-height:600px;
+  overflow-y:auto;
+}
+
+.ifPlotTable::-webkit-scrollbar:vertical {
+  display: none;
+}
+
+.pricingPropBoxInputsCon{
+  display:flex;
+  width:100%;
+  justify-content:flex-start;
+  align-items:flex-start;
+  gap:40px;
+}
+
+.minAndMaxBoxsHeading{
+  color: #242424;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 44px;
+}
+
+.minAndMaxBoxsPara{
+  color: #4A4A4A;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.newMediaBoxErrMsg{
+  font-size: 12px !important;
+  margin-top:-8px;
+}
+
+.newInsideCon{
+  width:auto !important;
+}
+
+.bhkFiltersHeading{
+  color: #242424;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top:21px;
+  margin-bottom:3px;
+}
+
+.bhkFiltersContant{
+  color: #333;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.bhkFilterBtnsHoldingCon{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top:16px;
+  gap:10px;
+}
+
+.bhksFilterBtn{
+  color: #0073C6;
+  font-size: 16px;
+  font-weight: 500;
+
+  border-radius: 10px;
+  border: 0.5px solid #0073C6;
+  background: #ECF7FF;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.bhksFilterSelectedBtn{
+  border-radius: 10px;
+  border: 1px solid #148B16;
+  background: #E0FEE1;
+  
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+  color: #148B16;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+.csvGenerateCircle{
+  width: 24px !important;
+  height: 24px !important;
+  cursor:pointer;
+  margin:0 !important;
+}
+
+.csvInstructionsBox{
+  display:flex;
+  flex-direction:column;
+}
+
+.csvInstructionsBoxDetailsCon{
+  margin-top:12px;
+  max-height: 250px;
+  overflow-y:auto;
+  overflow-x:hidden;
+  padding-left: 30px;
+  margin-bottom:18px;
+}
+
+.csvInstructionsBtn {
+  color: #005695;
+  font-size: 14px;
+  font-weight: 500;
+  background:transparent;
+  border:none;
+  display:flex;
+  flex-direction:row-reverse;
+}
+
+.csvBackwordBtn{
+  display:flex;
+  flex-direction: initial;
+}
+
+.csvBackwordSvg,
+.csvBackwordSvg svg{
+  transform: rotate(180deg);
+  position:relative;
+  bottom:4px;
+  width: 14px;
+  height: 14px;
+}
+
+.csvForwordSvg,
+.csvForwordSvg svg{
+  width: 14px;
+  height: 14px;
+}
+
+.csvInstructionsHeading{
+  border-radius: 4px;
+  background: #E2F3FF;
+  color: #242424;
+  font-size: 16px !important;
+  font-weight: 600;
+  gap:4px !important;
+  padding:4px !important;
+  display:flex !important;
+  align-items:center !important;
+}
+
+.csvInstructionsHeading svg{
+  width: 20px;
+  height: 20px;
+  margin:0;
+}
+
+.csvInstructionsText{
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom:10px;
+  text-align:left;
+}
+
+.csvInstructionsText span{
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration:none;
+  margin-right:4px;
+}
+
+.csvGenerateBtn{
+  display:flex;
+  align-items:center;
+  gap:4px;
+}
+
+.csvGenerateCircle:hover + .csvInstructionsBox {
+  display: flex;
+}
+
+.csvInstructionsBoxMianCon:hover .csvInstructionsBox {
+  display: flex;
+}
+
+.DeleteAllUnitsCon{
+  margin-left: auto;
+}
+
+.DeleteAllUnits{
+  border-radius: 2px;
+  background: #E3E9F2;
+  color: #000;
+  text-align: right;
+  font-size: 16px;
+  font-weight: 600;
+  border:none;
+  display:flex;
+  justify-content:center;
+  padding:6px;
+}
+
+.deleteUnitsInnerPopupCon{
+  max-width:457px !important;
+  display:flex !important;
+  justify-content:center !important;
+  align-items:center !important;
+  gap:15px;
+}
+
+.deleteUnitsInnerPopupCon svg{
+  align-self:flex-end;
+}
+
+.deleteUnitsInnerPopupCon h2{
+  color: #000;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.deleteUnitsInnerPopupCon p{
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.plotDeleteBtnsHoldingCon{
+  max-width: 974px;
+}
+
+.cvgPopupUploadContant{
+  display:flex;
+  gap:4px;
+}
+
+.propTableImageLoader{
+  width: 22px;
+  height: 22px;
+}
+
+.sampleScrollDiv{
+  height:100px;
+  overflow:auto;
+  margin: 20px;
+}
+
+.minAndMaxBoxesHoldingCon{
+  gap:20px;
+  margin-top:20px;
+}
+
+.propDoneIcon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background:  #CDFFCE;
+  border-radius:50%;
+  z-index:1;
+  top:-7px;
+  right:-7px;
+}
+
+.outerConForBaseprice{
+  margin-bottom:0;
+}
+
+.newInsideCon label{
+  padding:0;
+  margin:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.newMediaBoxContant p{
+  margin-left:9px;
+}
+
+.actionConTwo,
+.sideBorder{
+  border-right: 1px solid #98A5B8;
+}
+
+.csvLoaderMessege{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  font-size: 18px !important;
+  GAP:4px;
+}
+
+.csvLoaderimg{
+  width: 30px;
+  height: 30px;
+}
+
+.colOne{
+  min-width:70px !important;
+  max-width: 70px;
+}
+
+.tableLoaderMessege{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  color: #2A8ED6;
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tableLoaderimg{
+  height: 36px;
+  width: 36px;
+}
+
+.CompletionDateCheckBoxAndLable{
+  display: flex;
+  gap:6px;
+  width: 22px;
+  height: 22px;
+}
+
+.completionDateCheckBox{
+  accent-color: green;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  background:gray;
+}
+
+.actionConOne2 {
+  display: none;
+}
+
+/* 38% */
+@media only screen and (min-width: 601px) and (max-width: 1280px) {
+  .colTwo {
+    position: sticky;
+    left: 59px;
+    border-right:1px solid #98A5B8;
+  }
+
+  .aptTowerAndEleCardBasementBlock{
+    min-width:200px;
+  }
+
+  .prevwColone{
+    position: sticky;
+    left: 43px;
+  }
+  .prevwFloorplan{
+    position: sticky;
+    left: 43px;
+  }
+
+  .actionConOne {
+    display: flex;
+    position: sticky;
+    left: 178px;
+    box-shadow: 10px 0 5px -2px rgba(0, 0, 0, 0.1);
+  }
+
+  .actionConOne2 {
+    display: flex;
+    position: sticky;
+    left: 70px;
+    box-shadow: 10px 0 5px -2px rgba(0, 0, 0, 0.1);
+  }
+
+  .headerBlock {
+    width: 100px;
+  }
+
+  .superBuildUpArea {
+    max-width: 142px;
+    min-width: 142px;
+  }
+
+  .carpetArea {
+    max-width: 122px;
+    min-width: 122px;
+  }
+
+  .actionConTwo {
+    display: none;
+  }
+
+  .colOne {
+    width: 60px;
+    position: sticky;
+    left: 0;
+  }
+
+  .colOneUnitNumber {
+    display: flex;
+    position: sticky;
+    left: 60px;
+  }
+
+  .firsstPhaseInput {
+    width: 39%;
+    margin-bottom: 20px;
+  }
+
+  .aptTowerAndEleCardInputCon {
+    width: 100%;
+  }
+
+  .apartmentTowerAndElevationCard {
+    width: 100%;
+  }
+
+  .aptTowerAndEleCardTowerCon {
+    width: auto;
+  }
+  
+  .aptTowerAndEleCardRightSideCon {
+    flex-wrap: wrap;
+    width:100%;
+    gap:15px;
+  }
+
+  .propertyDetailsLandAreaStaticLable {
+    left: 75%;
+  }
+
+ .propertyNoOfFieldConMainCon{
+   margin-bottom:0;
+ }
+
+  .PpdInputOuterContainerClassName {
+    width: 23%;
+    margin-right: 2%;
+    min-width:240px;
+    margin-bottom:25px;
+  }
+
+  .DatePhases_container {
+    margin-bottom: 20px;
+  }
+
+  .overviewTableHeader1 {
+    width: 20%;
+    max-width: 150px;
+  }
+
+  .overviewTableHeader2 {
+    width: 20%;
+    max-width: 200px;
+  }
+
+  .MinAndMaxValuesErrMsg {
+    width: 100%;
+  }
+
+  .phasesMessageTop span,
+  .phasesMessageTop {
+    font-size: 16px;
+  }
+
+  .raraFieldsMainCon {
+    width: auto;
+    /* min-width: 50%; */
+  }
+  .scrollMepara {
+    display: flex;
+    margin-left: auto;
+  }
+  .forPlotColumnTwo{
+    display: none;
+  }
+
+    
+  .basementDropdown{
+    margin-right:4%;
+  }
+  .inWordsPriveForBP{
+    bottom: 15px;
+  }
+
+  .propertyPhasesBtn {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .propertyTypeBtn {
+      padding:10px;
+      padding-left:12px;
+      padding-right:12px;
+    height:44px;
+  }
+
+   .propertyTypeBtn span {
+      font-size:16px;
+   }
+
+  .pdTopContainer h3,
+  .SelectPhaseHeadingAbove{
+    font-size: 20px !important;
+  }
+
+  .propertyDetailsNoOfField {
+    height: 45px;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .propertyDetailsAnimatedLabel {
+    left: 10px;
+    top: 19px;
+  }
+
+  .basePriceInputLable {
+    top: 0;
+    left: 15px;
+  }
+
+  .frontIconClassName{
+    top: 14px;
+  }
+
+  .propTypesAddMoreBtn {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .minAndMaxBoxsHeading{
+    margin-top: 40px;
+  }
+
+  .apartmentTowerDetailMainCon,
+  .phasesPostPropCon {
+    margin-bottom: 40px;
+  }
+
+  .apartmentTowerDetailMainCon {
+    margin-right:0;
+    margin-top: 15px;
+  }
+
+   .pdBottomContainer {
+    padding-top: 40px;
+    
+  }
+
+  .towerDataToggogle {
+    gap:24px;
+  }
+
+  .propTableRowsHoldingCon{
+    max-height:530px;
+    overflow-y:auto;
+  }
+
+  /* .propertyDetailsNoOfField:valid ~ .propertyDetailsAnimatedLabel, */
+  .csvPopupSuccessNote,
+  .basePriceInputLable,
+  .propertyDetailsNoOfField:focus ~ .propertyDetailsAnimatedLabel{
+    font-size: 14px;
+  }
+
+  .pricingPropBoxHeadingACRMAXMINFirstcon{
+    font-size: 18px;
+  }
+
+  .csvPopupSuccessHeading{
+    font-size: 18px;
+  }
+
+  .csvPopupSuccessText{
+    font-size: 16px;
+  }
+
+  .propertyTypeTableMainCon {
+    width: 100%;
+  }
+
+  .tableLoaderMessege{
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+}
+
+/* 50% */
+@media only screen and (max-width: 600px) {
+  .firsstPhaseInput {
+    width: 100%;
+  }
+
+  .DatePhases_container {
+    width: 100%;
+    margin-bottom: 17px;
+  }
+
+  .aptTowerAndEleCardInputCon{
+    min-width:150px;
+  }
+
+  .aptTowerAndEleCardInputInnerCon {
+      width: 100%;
+      flex-wrap:wrap;
+  }
+
+  .firsstPhaseInput {
+    margin-bottom: 20px;
+  }
+
+  .colTwo {
+    position: sticky;
+    left: 60px;
+    border-right:1px solid #98A5B8;
+    max-width:100px;
+    min-width:100px;
+  }
+
+  .actionConTwo {
+    display: none;
+  }
+
+  .prevwColone{
+    position: sticky;
+    left: 43px;
+  }
+  .prevwFloorplan{
+    position: sticky;
+    left: 43px;
+  }
+
+  .actionConOne {
+    display: flex;
+    position: sticky;
+    left: 158px;
+    box-shadow: 10px 0 5px -2px rgba(0, 0, 0, 0.1);
+  }
+  .actionConOne2 {
+    display: flex;
+    position: sticky;
+    left: 58px;
+    box-shadow: 10px 0 5px -2px rgba(0, 0, 0, 0.1);
+  }
+
+  .headerBlock {
+    width: 96px;
+    height:44px;
+    font-size: 12px;
+    padding:5px;
+    text-align:center;
+    line-height:12px
+  }
+
+  .pdTopContainer {
+    width: 100%;
+  }
+  
+  .scrollMepara {
+    display: flex;
+    margin-left: auto;
+    font-size:18px;
+  }
+  
+  .pdTopContainer h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .pdTopContainer span {
+    font-size: 20px;
+    line-height: 12px;
+  }
+
+  .pdBottomContainer {
+    width: 100%;
+    padding-left: 28px;
+    padding-top: 40px;
+  }
+
+  .elevationsMainCon {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: wrap;
+    margin-left: 0;
+  }
+
+  .PpdInputOuterContainerClassName {
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 25px;
+    min-width:250px;
+  }
+
+  .elevationsInnerCon {
+    position: relative;
+    left: -50px;
+  }
+
+  .seperateClassForFloorField {
+    width: 95%;
+  }
+
+  .loadDisplayingCon {
+    position: relative;
+    top: 35px;
+  }
+
+  .propertyTypeHtmlTableCon {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 600px;
+    overflow-x: auto;
+  }
+
+  .superBuildUpArea {
+    max-width: 142px;
+    min-width: 142px;
+  }
+
+  .carpetArea {
+    max-width: 122px;
+    min-width: 122px;
+  }
+
+  .colOneUnitNumber {
+    display: flex;
+    position: sticky;
+    left: 60px;
+  }
+  /* 
+  .colTwoUnitNumber {
+    display: none;
+  } */
+
+  .inputBlock {
+    width: 96px;
+    font-size:14px;
+  }
+
+  .colOne {
+    width: 60px;
+    position: sticky;
+    left: 0;
+    min-width: 60px !important;
+  }
+
+  .elevationsInnerLastCon {
+    margin-left: 0px;
+  }
+
+  .propertyDetailsLandAreaStaticLable {
+    position: absolute;
+    z-index: 2;
+    top: 10px;
+    left: 85%;
+    font-size:13px;
+  }
+
+  .pricingPropBoxInDropdownACRMAXMIN {
+    width:100%;
+  }
+
+  .pricingPropBoxTextACRMAXMIN {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .pricingLableACRMAXMIN {
+    width: 30%;
+  }
+
+  .postPropMinAndMaxPriceInputMainCon {
+    margin-bottom: 15px;
+  }
+
+  .pricingPropBoxInnerRightSideConMAXMIN {
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 1%;
+    gap: 1%;
+    flex-wrap: wrap;
+  }
+
+  .pricingPropBoxHeadingACRMAXMIN {
+    height: 100%;
+    max-height: 200px;
+  }
+
+  .aptTowerAndEleCardTowerCon {
+    width: 20%;
+  }
+
+
+  .aptTowerAndEleCardRightSideCon {
+    margin-left: 10px;
+    padding: 6px;
+    flex-wrap:wrap;
+    width:100%;
+    gap:15px;
+  }
+
+  .aptTowerAndEleCardBasementBlock,
+  .aptTowerAndEleCardInputOuterCon {
+    width: 70%;
+  }
+
+  .aptTowerAndEleCardBasementBlock{
+    min-width:150px;
+  }
+
+  .aptTowerAndEleCardGroundBlock{
+    margin-bottom:0;
+  }
+
+  .pdBottomContainer {
+    width: 100%;
+    padding-left: 0px;
+  }
+
+   .pdBottomContainer h3{
+    font-size:18px;
+  }
+
+  .phasesPostPropCon {
+    margin-bottom: 40px;
+  }
+
+  .phasesPostPropCon h3,
+  .bottomOfHeadingPhase {
+    font-size: 16px;
+  }
+
+  .pricingInputClassInDropdownACRMAXMINBtmunderLine {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 4px;
+    width:140px;
+  }
+
+  .pricingLableACRMAXMIN,
+  .pricingLableACRMAXMINForDate {
+    font-size: 15px;
+    /* white-space: initial; */
+  }
+
+  .firsstPhaseInput {
+    width: 40%;
+  }
+
+  .pricingInputClassInDropdownACRMAXMINNoneBorder,
+  .forallclassnamewidth {
+    font-size: 14px;
+    padding:8px;
+  }
+
+  .overviewTableHeader1 {
+    width: 20%;
+    max-width: 150px;
+  }
+
+  .overviewTableHeader2 {
+    width: 30%;
+    max-width: 200px;
+  }
+
+  .MinAndMaxValuesErrMsg {
+    width: 100%;
+  }
+
+  .phasesMessageTop span,
+  .phasesMessageTop {
+    font-size: 13px;
+  }
+
+  .phasesMessageTop {
+    white-space:normal;
+    display:block;
+    text-align:left;
+  }
+
+  .phasesMessageTop svg{
+    margin-right:6px;
+    position:relative;
+    top:6px;
+  }
+  
+
+  .phasesMessageTop img {
+    width: 20px;
+    height: 20px;
+  }
+  .TowerDropDownICon {
+    display: flex;
+  }
+  
+  .apartmentTowerDetailMainCon {
+    margin-right:0;
+    margin-bottom:40px;
+    margin-top: 0px;
+  }
+
+  .forPlotColumnTwo{
+    display: none;
+  }
+
+  .pricingInputClassInputConACRMAXMIN div svg {
+    top:17px;
+  }
+
+  .raraFields {
+    width: 100%;
+    min-width:auto;
+  }
+
+  .basementDropdown {
+    margin-right:2.5%;
+  }
+  .inWordsPriveForBP{
+    bottom: 35px;
+  }
+
+ .flexsPhasesContainerfomain{
+   max-width: 379px;
+ }
+
+  .allPricingPropBoxsConInDropdownACRMAXMIN {
+    width:100%;
+  }
+
+  .pricingPropBoxInputsCon{
+    gap:20px;
+  }
+
+  .pricingPropBoxHeadingACRMAXMINFirstcon{
+    font-size: 14px;
+  }
+
+   .propertyPhasesBtn {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+   .propertyTypeBtn {
+      padding:10px;
+      padding-left:12px;
+      padding-right:12px;
+     height:40px;
+  }
+
+   .propertyTypeBtn span {
+      font-size:14px;
+   }
+
+  .pdTopContainer h3,
+  .SelectPhaseHeadingAbove{
+    font-size: 18px !important;
+    margin-bottom:20px !important;
+    gap:4px;
+  }
+
+  .propertyDetailsNoOfField {
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .propertyDetailsAnimatedLabel {
+    left: 10px;
+    top: 19px;
+  }
+
+  .basePriceInputLable {
+    top: 0;
+    left: 15px;
+  }
+
+  .frontIconClassName{
+    top: 11px;
+  }
+
+  .propTypesAddMoreBtn {
+    font-size: 12px;
+    margin-bottom: 40px;
+  }
+
+   .minAndMaxBoxsHeading{
+    margin-top: 40px;
+  }
+
+  .aptTowerAndEleCardRadioInputsMainCon {
+    margin-bottom:5px;
+  }
+
+  .phaseRadioInputLable {
+    font-size: 16px;
+  }
+
+  .phaseRadioInput {
+    width: 24px;
+    height: 24px;
+  }
+
+  .phaseNotificationMsg {
+    font-size: 16px;
+  }
+
+  .PropertyTypetableHeader {
+    margin-bottom:4px
+  }
+
+  .csvUploadBoxInnerCon{
+    font-size: 16px;
+    display:block;
+  }
+
+  .csvUploadBoxInnerCon span{
+    margin-left:4px;
+  }
+
+  .propdetailsSpanText,
+  .csvUploadBoxInnerCon div{
+    margin-top:5px;
+  }
+
+  .csvGenerateBtn{
+    position:relative;
+    bottom:4px;
+  }
+
+  .propertyTypeTableMainCon {
+    width: 100%;
+  }
+
+  .newInsideCon{
+    margin-top:20px;
+  }
+
+  .newMediaBoxContant p{
+      margin-left:5px;
+      font-size:14px !important;
+    }
+
+  .newMediaBoxContant svg{
+      width: 16px;
+      height: 16px;
+  }
+
+  .aptTowerAndEleCardBasementInput {
+    margin-top: 0px;
+  }
+
+  .towerDataToggogle {
+    gap:20px;
+  }
+
+  .propTableRowsHoldingCon{
+    max-height:400px;
+    overflow-y:auto;
+  }
+
+  .propertyTypeTableHeaderCon {
+    top:110px
+  }
+
+  .csvPopupSuccessHeading{
+    font-size: 14px;
+  }
+
+  .csvPopupSuccessNote,
+  .csvPopupSuccessText{
+    font-size: 12px;
+  }
+
+  .csvLoaderMessege{
+    font-size: 14px !important;
+    text-align:left
+  }
+  
+  .csvLoaderimg{
+    width: 22px;
+    height: 22px;
+  }
+
+  .csvPopupInnerPopupCon{
+    padding:12px !important;
+  }
+
+  .cvgPopupBottomCon{
+    padding:10px;
+  }
+
+  .aptTowerAndEleCardGroundBlock{
+    flex-wrap: wrap;
+    padding:0;
+  }
+
+  .elevationBlockHrLine{
+    display: none;
+  }
+
+  .elevationsNumberFied,
+  .newElevationDropdown {
+    margin: 3px;
+  }
+
+  .tableLoaderMessege{
+    gap:15px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .tableLoaderimg{
+    height: 30px;
+    width: 30px;
+  }
+}

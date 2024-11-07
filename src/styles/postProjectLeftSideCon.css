@@ -1,0 +1,372 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-style: normal;
+  }
+
+.newTrackerMainCon {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    /* margin-left: 3%; */
+    margin-top: 10px;
+}
+
+.newTrackerLeftSideCon {
+    display: flex;
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    position: relative;
+    top: 15px;
+    margin-right:30px;
+}
+
+.newTrackerBackIcon {
+    align-self: flex-start;
+    margin-right: 10px;
+    width: 28px;
+    height: 28px;
+}
+
+
+.leftSideMainCon {
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 80%;
+}
+
+.trackerDetailHeading {
+    color: var(--Black-3, #505050);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 23px;
+    text-transform: capitalize;
+    margin: 0;
+    margin-bottom: 2px;
+    line-height: 25px;
+
+
+
+
+}
+
+.trackerDetailsmallHeading {
+    color: var(--Grey-1, #666);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.postProjectHeading {
+    color: var(--field-colour-stroke, #282828);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 23px;
+    /* 82.143% */
+    margin-left: 10px;
+}
+
+
+
+.postProjTrackerEditIcon {
+    margin-left: 9px;
+    position:relative;
+    top:4px;
+}
+
+.statusBarMainCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.projectStatusContant {
+    color: var(--field-colour-stroke, #282828);
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: -60px;
+    line-height: 23px;
+    /* 115% */
+}
+
+.projectStatusSpan {
+    color: var(--field-colour-stroke, #282828);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.statusBar {
+    width: 409px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: var(--secondary-blue-light, #ECF7FF);
+    box-shadow: 3px 2px 8px 0px rgba(0, 0, 0, 0.11) inset;
+}
+
+.statusBarDisplayer {
+    width: 66px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 28px;
+    background: var(--primary-green-2, #65BB67);
+    box-shadow: 3px 0px 5px 0px rgba(101, 187, 103, 0.55);
+}
+
+.statusIconClass svg{
+    width: 28px;
+    height: 28px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    background-color: #FAFAFA;
+    bottom:3px;
+}
+
+.trackingsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 78px;
+}
+
+.statusBarPointerMainCon {
+    height: 523px;
+}
+
+.statusBarNamesMainCon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.projectStatusHrLine {
+    width: 70px;
+    border: none;
+    transform: rotate(90deg);
+    height: 1px;
+    background: #000;
+    background: repeating-linear-gradient(90deg, #000, #000, transparent 10px, transparent 20px);
+}
+
+.indecatingText {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    /* 143.75% */
+    align-self: flex-end;
+}
+
+.statusNames {
+    color: var(--black-2, #333);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+.statusNames span {
+    margin-left: 3px;
+}
+
+.doneStatusClass {
+    color: var(--black-2, #333);
+    font-style: normal;
+    font-weight: 600;
+}
+
+.leftSideMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.leftSideHRlinesCon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 69%;
+    position: relative;
+    top: 16px;
+    right: 20px;
+}
+
+.postProjTrackerLine {
+    border-style: inset;
+    border-top: 1px solid;
+    border-bottom: 0px;
+    border-bottom: none;
+    border-left: none;
+    margin: 4px;
+    display: block;
+    height: 1px;
+    clear:both;
+    border-top: 2px dashed var(--Brand-green-primary, #148B16);
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+
+/* 38% */
+@media only screen and (min-width: 800px) and (max-width: 1280px) {
+    .leftSideMainCon {
+        margin-top: 0px;
+        width: 100%;
+        padding-left: 3%;
+        padding-right: 3%;
+        top: 40px;
+        align-items: flex-start;
+        white-space: normal;
+    }
+
+    .statusBarNamesMainCon {
+        width: 100%;
+    }
+
+    .leftSideHRlinesCon {
+        width: 80%;
+        right: 0px;
+        top:14px;
+    }
+
+    .postProjTrackerLine {
+        width: 70%;
+        margin-right: px;
+    }
+
+    .statusIconClass svg{
+        width: 24px;
+        height: 24px;
+    }
+
+    .statusNames {
+        font-size: 16px;
+        width: 100%;
+        overflow-wrap: break-word;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .trackerDetailHeading {
+        font-size: 20px;
+    }
+
+    .trackerDetailsmallHeading {
+        font-size: 16px;
+    }
+
+     .postProjTrackerEditIcon {
+        margin-left: 2px;
+        top:2px;
+    }
+
+
+}
+
+/* 50% */
+@media only screen and (max-width: 800px) {
+    .leftSideMainCon {
+        margin-top: 0px;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        top: 40px;
+        align-items: flex-start;
+    }
+
+    .postProjTrackerLine {
+        width: 70%;
+        margin-right: px;
+    }
+
+    .statusIconClass svg{
+        width: 21px;
+        height: 21px;
+        margin-bottom:0;
+    }
+
+    .statusBarNamesMainCon {
+        width: 100%;
+    }
+
+    .postProjTrackerEditIcon {
+        margin-left: 0;
+    }
+
+    .statusNames {
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        word-break:break-word;
+        flex-direction:column;
+        min-width:53px;
+    }
+
+    .statusNames span{
+        margin-left:0;
+    }
+
+    .newTrackerMainCon {
+        justify-content: center;
+        margin-left: 0%;
+    }
+
+    .newTrackerLeftSideCon {
+        display: none;
+    }
+
+    .leftSideMainCon {
+        justify-content: space-between;
+        width: 100vw;
+        margin-left: 0px;
+    }
+
+    .leftSideHRlinesCon {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 80%;
+        position: relative;
+        right: 0px;
+        top:12px;
+    }
+}

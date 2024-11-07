@@ -1,0 +1,665 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-style: normal;
+}
+
+.specificationsBoxsCon{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap:2%;
+}
+
+.specificationsBox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  cursor: pointer;
+  margin-bottom:24px;
+  gap: 10px;
+  border-radius: 4px;
+  border-radius: 4px;
+  border: 1px solid #98A5B8;
+  background: #FAFAFA;
+  height:44px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.selectedBoxes{
+  border-radius: 8px;
+  border: 1px solid #148B16;
+  font-weight: 600 !important;
+}
+
+.specificationsBox:hover{
+  border: 1px solid var(--blue-gradient, #0073C6);
+  background: var(--secondary-blue-light, #ECF7FF);
+}
+
+.showCategory{
+  border: 1px solid var(--blue-gradient, #0073C6);
+  font-weight: 600 !important;
+  background: var(--secondary-blue-light, #ECF7FF);
+}
+
+.specificationsIcon svg{
+  width: 27px;
+  height: 27px;
+}
+
+.showCategory .specificationsIcon svg path{
+   stroke: #0073C6;
+}
+
+.specificationsSectionHeadingCon{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--black-2, #333);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+  width: 100%;
+  gap:10px;
+  margin-bottom:20px;
+}
+
+.specificationsSectionHeadingCon span{
+  font-size: 24px;
+}
+
+.specificationsSectionImg svg{
+  width: 24px;
+  height: 24px;
+  display:flex;
+  align-items:center;
+}
+
+.sepecificationsBottomCon{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 27px;
+  height:auto;
+  gap:57px;
+}
+
+.sepecificationsDisplayMainCon{
+  width: 30%;
+  max-width:486px;
+}
+
+.sepecificationsDisplayCon{
+  width: 100%;
+  height: 355px;
+  flex-shrink: 0;
+  padding: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: auto;
+
+  border-radius: 4px;
+  border: 1px solid #98A5B8;
+  background: linear-gradient(180deg, #F8F8F8 0%, #FFF 100%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.10);
+}
+
+.sepecificationsInputsMainCon{
+  width: 80%;
+}
+
+.sepecificationsInputsCon{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.itemDisplayCon{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;  
+  gap: 10px;
+
+  border-radius: 8px;
+  border: 0.5px solid var(--grey-4, #C9C9C9);
+  background: var(--white-3, #FFF);
+  width: 100%;
+  margin-bottom: 10px;
+  padding:8px;
+}
+
+.itemDisplayCon span{
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  align-self: center;
+}
+
+.itemDisplayIcon{
+  margin-left: 10px;
+  display:flex;
+  align-items:center;
+}
+
+.specificationsInputBox{
+  width: 100%;
+  border-radius: 8px;
+  border: 0.8px solid var(--grey-4, #C9C9C9);
+  background: #FFF;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 28px;
+  padding-left: 1.5%;
+  margin-bottom: 12px;
+  padding: 10px;
+}
+
+.specificationsInputField{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--black-3, #505050);
+  font-size: 20px;
+  font-weight: 500;
+  outline: none;
+  width: 98%;
+  border: none;
+  min-height: 10px;
+}
+
+.specificationsInputField::-webkit-scrollbar {
+display: none;
+}
+
+.specificationsInputConClassName{
+width: 100%;
+}
+
+.specificationsInputOuterCon{
+  width: 100%;
+}
+
+.specificationsInputBox svg{
+ cursor: pointer;
+}
+
+.loaderContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--grey-2, #767270);
+  font-size: 24px;
+  font-weight: 400;
+  position: relative;
+}
+
+.loaderGif{
+  width: 96px;
+  height: 32px;
+}
+
+.maxFieldsIndicatar{
+  color: #666666;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  align-self: flex-end;
+  margin-top: 12px;
+  text-align: right;
+}
+
+.displayBoxInsideHeading{
+ color: #000;
+ font-feature-settings: 'clig' off, 'liga' off;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 23px; /* 164.286% */
+ margin-bottom: 8px;
+  margin-top:2px;
+}
+
+.displayBoxInsideHeading svg{
+  position: relative;
+  top:4px;
+}
+
+.addPointToField{
+  border: 0.8px solid var(--brand-green-primary, #148B16);
+}
+
+.addPointToSelectedField{
+  border: 0.8px solid var(--secondary-blue-1, #0073C6);
+}
+
+.categoryDoneIcon{
+  width: 18.987px;
+  height: 18.987px;
+  position: relative;
+  bottom: 25px;
+  right: -20px;
+  margin-left: -24px;
+  background:  #CDFFCE;
+  border-radius:50%;
+}
+
+.itemRemovingIcon{
+  margin-right: 1%;
+}
+
+.specificationsPlusIconCon{
+    align-self: flex-end;
+    color: #0073C6;
+    font-size: 18px;
+    font-weight: 600;
+    white-space: nowrap;
+    cursor: pointer;
+    margin-top:16px;
+    display:flex;
+    align-items:center;
+    border-radius: 4px;
+    border: 0.8px solid #0073C6;
+    background: #FAFAFA;
+    padding:6px;
+}
+
+.specificationsPlusIcon{
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  margin-right: 5px;
+  position:relative;
+  top:5px;
+}
+
+.specificationsInputField{
+          display: block;
+          overflow: hidden;
+          resize: none;
+      }
+
+.specTopHeadingCon{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  width:100%;
+  align-self:flex-start;
+  margin-bottom:3%;
+  scroll-margin-top: 100px;
+}
+
+.selectedNotificationTextCon{
+    display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  margin-top:5px;
+  gap:29px;
+}
+
+.selectedNotificationText{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:8px;
+}
+
+.unSelectedSpec{
+  border-radius: 8px;
+  border-bottom: 3px solid #FFD600;
+  background: #ECF7FF;
+}
+
+.seletingSpecificationsPopup{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  border-radius: 10px;
+  border: 1px solid #C7A700;
+  background: linear-gradient(90deg, #FFED8F 0%, #FFFBE3 100%);
+  box-shadow: 0px 4px 15.4px 0px rgba(255, 214, 0, 0.10);
+  padding:16px;
+  align-self:flex-start;
+  gap:21px;
+  margin-bottom:20px;
+}
+
+.seletingSpecPopupLeftCon{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:9px;
+}
+
+.seletingSpecPopupLeftCon svg{
+  width: 33px;
+  height: 33px;
+}
+
+.seletingSpecPopupLeftCon p{
+  color: #202020;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.seletingSpecPopupBtnsCon{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  gap:12px
+}
+
+.seletingSpecPopupBtn{
+  display: flex;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #0073C6;
+  border:none;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.seletingSpecPopupNoBtn{
+  display: flex;
+  padding: 6px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 2px solid #0073C6;
+  background: #FFF;
+  color: #0073C6;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.itemDisplayConCancelIcon path{
+  width: 18px;
+  height: 18px;
+}
+
+.itemDisplayEachCon{
+  width: 100%;
+}
+
+.itemDisplayContant{
+  align-self:flex-start;
+  width:100%;
+  word-break:break-word;
+}
+
+.specificationEmptyCon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height:100%;
+  gap:19px;
+}
+
+.specificationEmptyCon p{
+  color: #333;
+  text-align: center;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+
+/* 38% */
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+  .sepecificationsInputsMainCon{
+      width: 60%;
+  }
+
+  .sepecificationsDisplayMainCon{
+    width: 40%;
+    /* min-width:300px; */
+  }
+
+  .sepecificationsDisplayCon{
+    margin-bottom: 3%;
+    height: 300px;
+  }
+
+  .loaderContainer{
+      font-size: 16px;
+      margin-left: 0px;
+      bottom: 0px;
+      margin-bottom: 0px;
+  }
+
+  .maxFieldsIndicatar{
+      font-size: 16px;
+      margin-top: 4px;
+  }
+
+  .specificationsSectionHeadingCon {
+    font-size: 20px;
+    margin-bottom:15px;
+  }
+
+  .specificationsSectionImg svg{
+      width: 28px;
+      height: 28px;
+  }
+
+  .sectionHeading{
+      font-size: 22px;
+  }
+
+  .seletingSpecPopupLeftCon p{
+    font-size: 16px;
+  }
+
+  .categoryDoneIcon{
+    right: -20px;
+  }
+
+  .sepecificationsBottomCon{
+    gap:36px;
+    margin-top:20px;
+  }
+
+   .specificationsPlusIconCon{
+    font-size: 16px;
+     white-space:normal;
+     text-align:right;
+     padding:4px;
+  }
+
+  .specificationsPlusIcon{
+    width: 20px;
+    height: 20px;
+    top:4px;
+  }
+
+  .specTopHeading{
+    font-size:20px;
+  }
+
+  .specTopHeadingCon{
+    margin-top:20px;
+  }
+
+  .specificationsBox{
+    font-size:16px;
+    padding-top:8px;
+    padding-bottom:8px;
+    margin-bottom:20px;
+  }
+
+  .specificationsIcon svg{
+    width: 24px;
+    height: 24px;
+  }
+
+  .displayBoxInsideHeading{
+   font-size: 16px;
+  }
+  .displayBoxInsideHeading svg{
+    height:22px;
+    width:22px;
+  }
+ 
+}
+
+/* 50% */
+@media only screen and (max-width: 600px) {
+  .sepecificationsBottomCon{
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .sepecificationsInputsMainCon{
+      width: 100%;
+  }
+
+  .sepecificationsDisplayMainCon{
+    display:none;
+  }
+
+  .sepecificationsDisplayCon{
+      display: none;
+  }
+
+  .loaderContainer{
+      font-size: 16px;
+      margin-left: 0px;
+      bottom: 0px;
+      margin-bottom: -36px;
+  }
+
+  .maxFieldsIndicatar{
+      font-size: 14px;
+      margin-top: 4px;
+  }
+
+  .specificationsSectionHeadingCon {
+      font-size: 20px;
+      margin-bottom:16px;
+      gap:6px;
+  }
+
+  .specificationsSectionHeadingCon span{
+    font-size:20px;
+  }
+
+  .specificationsSectionImg svg{
+      width: 28px;
+      height: 28px;
+  }
+
+  .sectionHeading{
+      font-size: 22px;
+  }
+
+  .itemRemovingIcon{
+      display: flex;
+      margin-right: 3%;
+  }
+
+  .specificationsPlusIconCon{
+    font-size: 14px;
+     white-space:normal;
+     text-align:right;
+     padding:3px;
+  }
+
+ .seletingSpecPopupLeftCon p{
+    font-size: 14px;
+  }
+
+  .specTopHeading{
+    font-size:18px;
+  }
+
+  .specTopHeadingCon{
+    flex-direction:column;
+    margin-top:5%;
+    margin-bottom:14px;
+  }
+
+  .seletingSpecificationsPopup{
+    flex-direction:column;
+    justify-content:flex-start;
+    align-items:flex-start;
+    padding:10px;
+    margin-top:14px;
+    margin-bottom:0;
+    gap:14px;
+  }
+
+  .specificationsBox{
+    margin-bottom:15px;
+    margin-right:10px;
+    font-size:14px;
+    padding:6px;
+  }
+
+    .categoryDoneIcon{
+      right: -15px;
+      bottom: 20px;
+    }
+
+    .loaderContainer{
+      font-size: 16px;
+      margin-left: 0px;
+      top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .specificationsPlusIcon{
+      width: 18px;
+      height: 18px;
+      top:3px;
+    }
+
+    .specificationsIcon svg{
+      width: 20px;
+      height: 20px;
+    }
+
+  .selectedNotificationTextCon{
+      margin-top:14px;
+      gap:24px;
+  }
+
+  .seletingSpecPopupNoBtn,
+  .seletingSpecPopupBtn{
+    padding: 6px 12px;
+  }
+
+  .seletingSpecPopupNoBtn{
+    padding: 5px 12px;
+  }
+ 
+}

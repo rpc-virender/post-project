@@ -1,0 +1,797 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-style: normal;
+  }
+
+.PropjectAmenitiesMainCon{
+    padding-left: 3%;
+    height:100%;
+    overflow-y:auto;
+    padding-top: 100px;
+    width:100%;
+}
+
+.searchAmenityHeadings{
+    color: var(--black-2, #333);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px; /* 95.833% */
+    align-self: flex-start;
+}
+
+.customAmenityHeading{
+    color: var(--black-2, #333);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 23px; /* 95.833% */
+    margin-bottom: 16px;
+    align-self: flex-start;
+}
+
+.searchAmenityFieldCon{
+    width:100%;
+    position: sticky;
+    top: -35px;
+    z-index: 1;
+    padding-top: 16px;
+    background: white;
+}
+
+.AminputOuterContainer{
+    width: 40%;
+    margin-bottom:3%;
+    min-width:693px;
+}
+
+.AminputContainer{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    position: relative;
+}
+
+.searchAmenityField{
+    width:100%;
+    border-radius: 8px;
+    border: 1px solid #4D6677;
+    background: #FFF;
+    height:48px;
+    padding-left:27px;
+    color: #242424;
+    font-size: 20px;
+    font-weight: 500;
+    padding-right:3%;
+}
+
+.searchAmenityFieldLable{
+      position: absolute;
+      left: 27px;
+      top: 23px;
+      transform: translateY(-50%);
+      pointer-events: none;
+      transition: 0.3s;
+      color: #505050;
+      font-size: 24px;
+      font-weight: 400;
+}
+
+.searchAmenityField:focus{
+    border: 1px solid #148B16;
+}
+
+/* .searchAmenityField:valid~.searchAmenityFieldLable, */
+.searchAmenityField:focus~.searchAmenityFieldLable {
+    display:none;
+}
+
+.hideLable{
+    display:none;
+}
+
+.aminityLableElement{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    color: #7e7b7b;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.amenityGroupHeading{
+    color: #148B16;
+    font-size: 22px;
+    font-weight: 600;
+    background: #F4FAF2;
+    margin-right: auto;
+    padding:10px;
+    margin-bottom: 32px;
+    display: flex;
+}
+
+.amenityGroupHeading hr{
+    border:0;
+    border-right: 4px solid #B6CEAF;
+    margin-right: 9px;
+}
+
+.subGroupDataMainBlock{
+    display:flex;
+    flex-direction:column;
+}
+
+.subGroupDataBlock{
+    display:flex;
+    flex-direction:column;
+    margin-left: 40px;
+}
+
+.amenitySubGroupHeading{
+    color: #4D6677;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom:19px;
+}
+
+.amenityBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3%;
+    margin-bottom: 20px;
+}
+
+.amenityImage{
+    opacity: 0.1;
+    background: transparent 50% / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    top:2px;
+}
+
+.amenityImage svg{
+    width: 24px;
+    height: 24px;
+}
+
+.amenityName{
+    color: #505050;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23px; 
+    text-transform: capitalize;
+    margin-left: 8px;
+    white-space: nowrap;
+    user-select:none;
+    cursor:pointer;
+    position:relative;
+    top:3px;
+}
+
+.amenityName:hover{
+    color: #000;
+    font-weight: 600;
+}
+
+.selectedAmenityName{
+    color: #000;
+    font-weight: 500;
+    font-weight:600;
+}
+
+.amenityBoxsContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.addCustomMainCon{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    width: 100%;
+    gap:10px;
+    margin-bottom: 20px;
+}
+
+.addCustomInputFieldCon{
+    display: flex;
+    align-items: center;
+}
+
+.addCustomInputField{
+    border:none;
+    border-radius: 4px;
+    height: 48px;
+    border: 1px solid var(--grey-4, #C9C9C9);
+    color: #4D6677;
+    font-size: 18px;
+    font-weight: 600;
+    padding-left:10px;
+    min-width: 300px;
+}
+
+.addCustomInputField:focus{
+    outline:none;
+}
+
+.addCustomButtonOuterCon{
+    width: auto;
+    position: relative;
+}
+
+.addCustomButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 100%;
+    white-space:nowrap;
+    border-radius: 4px;
+    border: 1px solid #0073C6;
+    background: #FFF;
+    color: #0073C6;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    outline: none;
+    padding:10px;
+    background: #FAFAFA;
+}
+
+.addCustomButton:hover{
+    background: #0073C6;
+    color: WHITE;
+}
+
+.singleSelectedRadioField{
+    width: 30px;
+    height: 30px;
+}
+
+.customAmenityDropdownCon{
+    position: relative;
+    width: 100%;
+    height: 275px;
+
+    display: none;
+    
+    align-items: center;
+    border-radius: 10px;
+    border-right: 0.6px solid var(--grey-3, #B5ABAC);
+    border-bottom: 0.6px solid var(--grey-3, #B5ABAC);
+    border-left: 0.6px solid var(--grey-3, #B5ABAC);
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+    margin-bottom: -230px;
+    z-index:1;
+}
+
+
+.customAmenityDropdownItemsCon{
+    width: 100%;
+    height: 240px;
+    overflow-y: auto;
+}
+
+.customAmenityDropdownItem{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.customAmenityDropdownItem label{
+    color: var(--grey-2, #767270);
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px; /* 115% */
+    margin-left: 15px;
+    position: relative;
+    bottom: 7px;
+}
+
+.customAmenitiesMainCon{
+    width: 100%;  
+}
+
+.customAmenitiesBoxsCon{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width:100%;
+    height:auto;
+}
+
+.AmenitiesBoxsTopCon{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    height:100%;
+    width:90%;
+    scroll-behavior: smooth;
+    scroll-margin-top:110px;
+}
+
+.customAmenitiesItemsCon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    height: 40px;
+    border-radius: 34px;
+    border: 1px solid var(--secondary-blue-2, #CBE9FF);
+    background: var(--secondary-blue-light, #ECF7FF);
+    margin-right: 7px;
+    margin-bottom: 10px;
+    white-space:nowrap;
+    height:44px;
+    color: var(--grey-1, #666);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+    white-space: nowrap;
+    word-break:break-word;
+}
+
+.amenityCrossIcon,
+.amenityCrossIcon svg{
+    cursor: pointer;
+    position:relative;
+    top:3px;
+
+}
+
+.postProjectAmenityBtnCon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33px;
+    margin-bottom: 65px;
+}
+
+.postProjectAmenityBtn{
+    display: inline-flex;
+    height: 78px;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    border: none;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background: var(--Secondary-Blue-1, #0073C6);
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.postProjectAmenityBtn:focus{
+    outline: none;
+}
+
+.addCustomOuterContainer{
+    margin-right:2%;
+}
+
+
+.allPropjectDetailsMainCon{
+    overflow-y: auto;
+    height: 60%;
+    background:gray;
+}
+
+.displayingAmenitiesMainCon{
+    width:100%;
+    margin-bottom:2%;
+    user-select:none;
+}
+
+.customAmenitiesBoxsHeading{
+    color: #202020;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 16px;
+}
+
+.newAmenityCheckbox{
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-right: 6px;
+    position:relative;
+    top: 4px;
+    cursor:pointer;
+}
+
+.AmenitiesDisplayingTopMainContainer{
+    display:flex;
+    align-items:center;
+}
+
+.amenitiesDisplayingScrollButtons{
+    width: 54px;
+    height: 54px;
+    cursor:pointer;
+    position:relative;
+    bottom:4px !important;
+}
+
+.amenityLeftArrowIcon{
+    transform: rotate(180deg);
+    bottom:8px;
+}
+
+.singleSelectBySeaechMainCon{
+    width:100% !important;
+}
+
+.addCustomButton:focus,
+.searchAmenityField:focus{
+    outline:none;
+}
+
+.noMatchAmenitiesText{
+    color: #0073C6;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom:30px;
+}
+
+
+/* TABS */
+@media only screen and (min-width: 600px) and (max-width: 1400px) {   
+    .searchAmenityHeadings{
+        font-size: 20px;
+    }
+
+    .customAmenityHeading{
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    
+    .amenityGroupHeading{
+        font-size: 18px;
+        margin-bottom: 22px;
+    }
+    
+    .amenityBox{
+        margin-right: 23px;
+        margin-bottom: 19px;
+    }
+    
+     .addCustomInputField{
+        height: 42px;
+        font-size: 18px;
+    }
+    
+    .amenityBoxsContainer{
+        margin-bottom: 3%;
+    }
+
+    .addCustomButtonOuterCon{
+        width: auto;
+    }
+
+    .addCustomButton{
+        white-space:normal;
+        height: 42px;
+    }
+    
+    .singleSelectedRadioField{
+        width: 18px;
+        height: 18px;
+    }
+    
+    .customAmenityDropdownItem{
+        margin-bottom: 12px;
+    }
+    
+    .customAmenityDropdownItem label{
+        font-size: 15px;
+        margin-left: 9px;
+        bottom: 4px;
+    }
+    
+    .customAmenitiesItemsCon{
+        gap: 6px;
+        padding: 7px;
+        height: 44px;
+        border-radius: 21px;
+        margin-right: 4px;
+        margin-bottom: 0px;
+        font-size: 16px;
+    }
+
+    .amenitiesDisplayingScrollButtons{
+        display: block;
+        width: 44px;
+        height: 44px;
+        bottom:0px !important;
+    }
+
+    .amenityLeftArrowIcon{
+        bottom:5px;
+    }
+
+    .customAmenitiesBoxsCon{
+        overflow: hidden;
+        height:auto;
+        width:90%;
+        gap: 20px;
+        margin-bottom: 3%;
+    }
+
+    .addCustomMainCon{
+        flex-wrap:wrap;
+    }
+
+    .AminputOuterContainer{
+        width: 90%;
+        margin-bottom:3%;
+        max-width:693px;
+        min-width:500px;
+    }
+
+    .PropjectAmenitiesMainCon{
+        padding-top: 80px;
+    }
+     
+    .amenityName{
+        font-size: 18px;
+    }
+
+    .amenitySubGroupHeading{
+        font-size: 18px;
+    }
+
+    .searchAmenityFieldCon{
+        top: -20px;
+        padding-top: 14px;
+    }
+
+}
+
+/* Mobile */
+@media only screen and (max-width: 600px) {
+    .searchAmenityHeadings{
+        font-size: 20px;
+    }
+
+    .customAmenityHeading{
+        margin-bottom: 12px;
+    }
+
+    .addCustomInputFieldCon{
+        margin-left: 0;
+    }
+
+    .addCustomButtonOuterCon{
+        width: auto;
+        left: 0;
+    }
+    
+    .amenityGroupHeading{
+        padding:6px;
+        font-size: 16px;
+        margin-bottom: 14px;
+    }
+    
+    .amenityBox{
+        margin-right: 19px;
+        margin-bottom: 15px;
+    }
+    
+    .amenityName{
+        font-size: 12px;
+        white-space:wrap;
+        margin-left: 4px;
+    }
+    
+    .amenityBoxsContainer{
+        margin-bottom: 3%;
+
+        align-items:flex-start;
+    }
+    
+    .addCustomInputField{
+        margin-top: 9px;
+    }
+    
+    .singleSelectedRadioField{
+        width: 15px;
+        height: 15px;
+    }
+    
+    .customAmenityDropdownItem{
+        margin-bottom: 10px;
+    }
+    
+    .customAmenityDropdownItem label{
+        font-size: 12px;
+        margin-left: 7px;
+        bottom: 4px;
+    }
+    
+    .customAmenitiesItemsCon{
+        font-size: 10px;
+    }
+    
+    .addCustomMainCon{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start; 
+        flex-wrap: wrap;
+    }
+
+    .postProjectAmenityBtnCon{
+        width: 100%;
+    }
+
+    .postProjectAmenityBtn{
+        width: 80%
+    }
+
+    .customAmenitiesItemsCon{
+        gap: 6px;
+        padding: 2px;
+        height: auto;
+        border-radius: 21px;
+        margin-right: 4px;
+        margin-bottom: 0px;
+        justify-content:center;
+        align-items:center;
+        padding-left:10px;
+        font-size: 12px;
+        word-break:break-all;
+        position:relative;
+        bottom:2px;
+        word-break:break-word;
+        white-space: wrap;
+    }
+
+    .amenitiyDisplayingText{
+        white-space: nowrap;
+    }
+
+    .amenitiesDisplayingScrollButtons{
+        width: 44px;
+        height: 44px;
+        bottom:0px !important;
+    }
+
+    .amenityLeftArrowIcon{
+        bottom:6px;
+    }
+
+    .customAmenitiesBoxsCon{
+        overflow: hidden;
+        height:auto;
+        width:100%;
+        gap: 10px;
+        margin-bottom: 5%;
+    }
+
+    .AminputOuterContainer{
+        width: 96%;
+        margin-bottom:3%;
+        max-width:693px;
+        min-width:200px;
+    }
+
+    .aminityLableElement{
+        font-size: 16px;
+    }
+
+    .aminityLableElement svg{
+        width: 26px;
+        height: 26px;
+    } 
+
+    .customAmenityHeading,
+    .searchAmenityHeadings,
+    .customAmenitiesBoxsHeading{
+        font-size: 16px;
+    }
+
+    .searchAmenityFieldLable{
+          left: 15px;
+          font-size: 24px;
+    }
+
+    .amenityImage svg,
+    .newAmenityCheckbox{
+        width: 18px;
+        height: 18px;
+    }
+
+    .searchAmenityField{
+        height:40px;
+        padding-left:10px;
+        font-size:16px;
+    }
+
+    .searchAmenityFieldLable{
+          left: 10px;
+          top: 20px;
+    }
+
+    .AmenitiesDisplayingTopMainContainer,
+    .searchAmenityFieldCon{
+        margin-bottom:16px;
+    }
+
+    .searchAmenityFieldCon{
+        top: -20px;
+        padding-top:12px;
+    }
+
+    .customAmenitiesBoxsHeading{
+        margin-bottom:10px;
+    }
+
+    .addCustomInputField{
+        width: 100%;
+        font-size:16px;
+        height: 32px;
+        min-width: 250px;
+        margin-top:0;
+    }
+
+    .addCustomButton{
+        padding:6px;
+        font-size:14px;
+        height: auto;
+    }
+
+    .PropjectAmenitiesMainCon{
+        padding:10px;
+        padding-top: 70px;
+    }
+
+    .amenityCrossIcon,
+    .amenityCrossIcon svg{
+        width:20px;
+    }
+
+    .postProjectAmenityBtn{
+        height: auto;
+        border-radius: 4px;
+        font-size: 18px;
+        padding:10px;
+        padding-left:30px;
+        padding-right:30px;
+        width:auto;
+    }
+
+    .noMatchAmenitiesText{
+        font-size: 16px;
+        margin-bottom:20px;
+    }
+
+    .amenitySubGroupHeading{
+        font-size: 16px;
+        margin-bottom:10px;
+    }
+    
+}
+
+

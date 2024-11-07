@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+}
+
+.error404Page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction:column;
+    align-items:center;
+    background: #FFF;
+    overflow:hidden;
+}
+
+.error404PageHeading{
+    color: #06497A;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 600;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.error404PageHeading span{
+    font-size: 64px;
+}
+
+.error404Btn{
+    background: #0073C6;
+    color: #FFF;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    border:none;
+    padding:10px;
+    margin-top:35px;
+}
+
+.colorCircles{
+    border-radius: 50%;
+    background: linear-gradient(180deg, rgba(0, 115, 198, 0.60) 0%, rgba(202, 233, 255, 0.60) 100%);
+    width: 385px;
+    height: 385px;
+    flex-shrink: 0;
+    position: absolute;
+}
+
+.colorCircleTop{
+    top:-150px;
+    left:-150px;
+}
+
+.colorCircleBottom{
+    bottom:-150px;
+    right:-150px;
+}
+
+.error404Img{
+    width: 50%;
+    height: 50%;
+    flex-shrink: 0;
+}
+
+.colorCircleBottomLite{
+    border-radius: 385px;
+    background: linear-gradient(180deg, rgba(0, 115, 198, 0.20) 0%, rgba(202, 233, 255, 0.20) 100%);
+    bottom:-180px;
+    right:-120px;
+}
+
+.colorCircleTopTite{
+    border-radius: 385px;
+    background: linear-gradient(180deg, rgba(0, 115, 198, 0.20) 0%, rgba(202, 233, 255, 0.20) 100%);
+    top:-180px;
+    left:-120px;
+}
+
+/* user Deactivated Page */
+
+.userDeactivatedPageMainCon{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    flex-direction:column;
+    align-items:center;
+    fill: var(--White-3, #FFF);
+    position:absolute;
+    z-index:3;
+    background: rgba(255, 255, 255, 0.3); /* White color with 30% opacity */
+    backdrop-filter: blur(2px); /* Blur effect */
+    overflow:hidden;
+}
+
+.userdeactivatedPoupBox{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 1px solid rgba(112, 144, 176, 0.70);
+    background: #FFF;
+    box-shadow: 0px 4px 20px 0px rgba(194, 194, 194, 0.76);
+    margin-top: 7%;
+    max-width:861px;
+    padding:20px;
+    gap:20px;
+    position:relative;
+}
+
+.userdeactivatedImage{
+    min-width: 249px;
+    height: 192px;
+}
+
+.userdeactivatedPoupContantBox{
+    text-align:left
+}
+
+.userdeactivatedHeading{
+    color: #3E5384;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    text-align:left;
+    margin-bottom:17px;
+}
+
+.userdeactivatedContant{
+    color: #242424;
+    font-size: 24px;
+    font-weight: 500;
+    text-align:left;
+}
+.userDeactivatedPageCrossIcon svg{
+    width: 38px;
+    height: 38px;
+    cursor: pointer;
+    position:absolute;
+    right:0;
+    top:0;
+    margin:10px;
+}
+
+
+/* TAB */
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+    .error404PageHeading{
+        font-size: 42px;
+    }
+
+    .error404Btn{
+        font-size: 28px;
+        padding:10px;
+    }
+
+    .error404Img{
+        width: 70%;
+        height: 40%;
+        flex-shrink: 0;
+    }
+
+    /* user Deactivated Page */
+
+    .userdeactivatedHeading{
+        font-size: 20px;
+        margin-bottom:17px;
+    }
+    
+    .userdeactivatedContant{
+        font-size: 18px;
+    }
+
+    .userdeactivatedImage{
+        min-width: 163px;
+        height: 126px;
+    }
+
+    .userdeactivatedPoupBox{
+        max-width: 726px;
+    }
+
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    .error404PageHeading{
+        font-size: 28px;
+    }
+
+    .error404Btn{
+        font-size: 28px;
+        padding:10px;
+    }
+
+    .error404Img{
+        width: 90%;
+        height: 40%;
+        flex-shrink: 0;
+    }
+
+    .colorCircleBottomLite,
+    .colorCircleBottom{
+        display:none;
+    }
+
+    .colorCircleTopTite{
+        position:fixed;
+        top:-230px;
+        right:-120px;
+        margin-left:auto;
+    }
+
+    .colorCircleTop{
+        position:fixed;
+        top:-280px;
+        right:-130px;
+        margin-left:auto;
+    }
+
+    /* user Deactivated Page */
+    .userdeactivatedHeading{
+        font-size: 16px;
+        margin-bottom:10px;
+    }
+    
+    .userdeactivatedContant{
+        font-size: 14px;
+    }
+
+     .userdeactivatedImage{
+        min-width: 120px;
+        height: 100px;
+    }
+
+    .userdeactivatedPoupBox{
+        margin-top: 10%;
+        max-width:90%;
+        padding:10px;
+        gap:10px;
+    }
+}

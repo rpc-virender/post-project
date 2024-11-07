@@ -1,0 +1,1273 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-style: normal;
+}
+
+section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#popper-popup {
+  display: none;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  font-size: 13px;
+  border-radius: 4px;
+  width: 100%;
+  max-width: 400px;
+  background: #FFF;
+  border: 1px solid #BDD3E2;
+  filter: drop-shadow(0px 4px 17px rgba(146, 178, 200, 0.52));
+}
+
+#popper-popup[data-popper-reference-hidden] {
+  visibility: hidden;
+  pointer-events: none;
+}
+#popper-popup[show-popper] {
+  display: block;
+  z-index: 9999;
+}
+
+/*keep popper visible in the Divi Builder for editing*/
+#et-fb-app #popper-popup {
+  display: block;
+}
+
+/*build the arrow targeting the divider with class 'popper-arrow'*/
+#popper-arrow,
+#popper-arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #FFF;
+}
+
+#popper-arrow {
+  visibility: hidden;
+}
+
+#popper-arrow::before {
+  visibility: visible;
+  content: "";
+  transform: rotate(45deg);
+}
+
+/*position arrow using popper.js data-popper-placement attribute*/
+#popper-popup[data-popper-placement^="top"] #popper-arrow {
+  bottom: -4px;
+}
+
+#popper-popup[data-popper-placement^="bottom"] #popper-arrow {
+  top: -4px;
+}
+
+#popper-popup[data-popper-placement^="left"] #popper-arrow {
+  right: -4px;
+}
+
+#popper-popup[data-popper-placement^="right"] #popper-arrow {
+  left: -4px;
+}
+
+/*hide arrow when reference outside of viewport*/
+#popper-popup[data-popper-reference-hidden] #popper-arrow::before {
+  visibility: hidden;
+}
+
+
+
+.googleMapConMianCon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.postProjectMainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: #FAFAFA;
+  /* padding-bottom: 49px; */
+  height: 91vh;
+}
+
+.bottomDetailsMainContainer {
+  width: 97%;
+  border-radius: 10px;
+  background: var(--white-3, #FFF);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  position: relative;
+  top: 20px;
+  height: 87%;
+  overflow: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-margin-top:110px;
+  display:flex;
+  flex-direction:column;
+}
+
+.custumOptionClass{
+  color: #0073C6;
+  font-size: 16px;
+  font-weight: 600;
+  background:transparent;
+  border:none;
+  text-align:left;
+  cursor:pointer;
+  height:auto;
+}
+
+.staticHeadingTextsCon{
+    color: #148B16;
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: capitalize;
+    background: #FFF;
+    padding:18px;
+    padding-left:3%;
+    padding-right:3%;
+    border-bottom: 1px solid #D6DEEA;
+    position: absolute;
+    width: 100% !important;
+    z-index:3;
+}
+
+.HeaderOfPostPropertiesDetails{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap:wrap;
+  position: sticky !important;
+  top:0;
+}
+
+.trackerComponentCon {
+  position: sticky;
+  top: 0;
+}
+
+.popupRightSideMineCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  width: 100%;
+}
+
+.start-left-order {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+
+.numberInputField::-webkit-outer-spin-button,
+.numberInputField::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.new-hor-order {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.selectUsersMainCon {
+  width: 590px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  user-select: none;
+}
+
+.localityFieldsMainCon{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  width:380px;
+}
+
+.PDinputOuterContainerClassName {
+  width: 30%;
+  position:relative;
+  width:380px;
+  margin-bottom:20px;
+}
+
+.localityCustumFieldBtn{
+  position:relative;
+  top:-30px;
+}
+
+.input-field {
+  position: relative;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.animatedInput {
+  font-size: 18px;
+  color: #242424;
+  outline: none;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 0.8px solid var(--grey-4, #C9C9C9);
+  background: #FFF;
+  user-select: none;
+  font-weight:700;
+}
+
+.addressAnimatedInput {
+  width: 100%;
+}
+
+.addressFieldInnerOuter {
+  width: 100%;
+}
+
+.addressField {
+  width: 100%;
+  margin-top:0px;
+}
+
+.animatedLabel {
+  position: absolute;
+  left: 18px;
+  top: 24px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s;
+  color: var(--black-3, #505050);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.expectedCompletionLabel{
+  line-height: 20px !important;
+}
+
+.dateClassAnimatedLabel {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+  color: var(--black-3, #505050);
+}
+
+.animatedInput:focus {
+  border: 0.8px solid var(--brand-green-primary, #148B16);
+}
+
+/* .animatedInput:valid~.animatedLabel, */
+.animatedInput:focus~.animatedLabel{
+  top: -5px;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+  color: #148B16;
+}
+
+.latLongInputsLable {
+  top: -5px;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+  color: #148B16;
+}
+
+.afterSelectedLableClass {
+  top: -5px;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: white;
+  color: #148B16;
+}
+
+.rotateArrow {
+  transform: rotate(180deg);
+}
+
+.postProjBasicDetailsDropdownArrow {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  position: relative;
+  bottom: 39px;
+  left: 85%;
+  transition-duration: 0.5s;
+  pointer-events: none;
+}
+
+.rightSideMainCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.containerDetailsmallHeading {
+  color: var(--grey-1, #666);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  text-transform: capitalize;
+}
+
+.PropjectDetailsMainCon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding-left: 6%;
+  padding-right: 6%;
+  height: 100%;
+  scroll-behavior: smooth;
+  scroll-margin-top:110px;
+  padding-top:80px;
+  overflow-y:auto;
+}
+
+
+.requiredStar {
+  color: var(--mandatory, #F00);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.cladenarIconInput{
+  top:5px !important;
+}
+
+.cladenarIconInput:hover{
+  cursor: pointer;
+}
+
+.postProjectInputsCon {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.postProjectInputsBottomCon{
+  gap:2%;
+  margin-bottom:0;
+}
+
+.sectionHeading {
+  color: var(--black-2, #333);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 25px !important;
+  align-self: flex-start;
+  width:100%;
+  margin-top:20px
+}
+
+.phasesSectionHeading{
+  color: #505050;
+  align-self: flex-start;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.addressField {
+  width: 100%;
+  align-self: flex-start;
+}
+
+.pac-target-input{
+  width: 100% !important;
+  margin:0px !important;
+  color:#242424;
+}
+
+.googleMapSearchFieldOuterCon{
+  align-self:flex-start;
+  width: 100%;
+  height:50px;
+}
+
+.searchMapFieldLable{
+  position: absolute;
+  left: 27px;
+  top: 24px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s;
+  font-weight: 400;
+  color: #242424 !important;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.googleMapHeading {
+  align-self: flex-start;
+  margin-bottom:20px;
+  color: #242424;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 23px;
+  width:100%;
+  margin-top:15px;
+}
+
+.googleMapCon {
+  width: 100%;
+  height: 432px;
+}
+
+.projDetailsTextAreaInputContainer {
+  width: 100%;
+  flex-shrink: 0;
+  margin-top: 20px;
+}
+
+.projDetailsTextAreaInputField {
+  width: 100%;
+  color: var(--grey-1, #666);
+  font-size: 24px;
+  font-weight: 500;
+  border: 0.8px solid #C9C9C9;
+  background: #FFF;
+  box-sizing: border-box;
+  border-top: none;
+}
+
+.ql-editor{
+  font-size: 18px;
+  min-height: 150px;
+}
+
+.projDetailsTextAreaInputField:focus {
+  outline: none;
+}
+
+.displayMapContainerClass {
+  width: 100%;
+  height: 270px;
+  flex-shrink: 0;
+  border:1px solid #148b16;
+}
+
+.googleMapSearchField {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  color: #505050;
+  font-size: 24px;
+  font-weight: 400;
+  border-radius: 4px;
+  border: 0.8px solid #148b16;
+  background: #FFF;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
+  padding-left:20px;
+  padding-right:20px;
+  border-bottom: 0;
+}
+
+.backendErrPopupCon {
+  width: 694px;
+  height: 796px;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+
+  bottom: 635px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.backendErrBox {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 551px;
+  height: 255.819px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #FAFAFA;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.20);
+
+}
+
+.sadImage {
+  width: 90px;
+  height: 92px;
+  transform: rotate(-0.181deg);
+}
+
+.crossIconForPopup {
+  position: relative;
+  top: 50px;
+  left: 615px
+}
+
+.beckendErrcrossIcon {
+  position: relative;
+  bottom: -5px;
+  left: 230px;
+  cursor: pointer;
+
+}
+
+.backendErrHeading {
+  color: #000;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+}
+
+.userContainer {
+  width: 174px;
+  height: 174px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #FAFAFA;
+  box-shadow: 0px 4px 10px 0px rgba(213, 226, 242, 0.37);
+
+  color: #7D7D7D;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+}
+
+.selectedUserContainer {
+  color: #65BB67;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 8px;
+  background: #FAFAFA;
+  box-shadow: 0px 4px 10px 0px rgba(101, 187, 103, 0.45);
+}
+
+.userContainer:hover {
+  color: #65BB67;
+  font-weight: 600;
+  line-height: normal;
+  border-radius: 8px;
+  background: #FAFAFA;
+  box-shadow: 0px 4px 10px 0px rgba(101, 187, 103, 0.45);
+}
+
+.userSelectbtn {
+  width: 423px;
+  height: 57px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--secondary-blue-1, #0073C6);
+
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  border: none;
+  margin-top: 28px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.usersIcons {
+  width: 83px;
+  height: 83px;
+  margin-bottom: 17px;
+}
+
+.userConHeading {
+  color: var(--black-2, #333);
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  align-self: flex-start;
+  margin-bottom: 0;
+}
+
+.userConPara {
+  color: var(--grey-3, #B5ABAC);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  align-self: flex-start;
+}
+
+.postProjectButtonMainCon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.postProjectButton {
+  height: 69px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--secondary-blue-1, #0073C6);
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 28px;
+  margin-bottom: 100px;
+  border: none;
+  cursor: pointer;
+  white-space: nowrap;
+  padding-right:8%;
+  padding-left:8%;
+}
+
+.loadDisplayingCon span{
+  color: var(--Grey-2, #767270);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.loaderGif{
+  width: 96px;
+  height: 32px;
+}
+
+.postProjectSubmitButtonMainCon {
+  width: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.bottomBtnsAndErrCon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.maximumExcedlimit{
+  color: #98A5B8;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-left: auto;
+}
+.maximumExcedlimiterror{
+  color: red;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+  margin-top: 2px;
+  margin-left: auto;
+}
+
+.textForLatAndLong {
+  color: #242424;
+  margin-top:0;
+}
+
+.textForLatAndLong span {
+  position: relative;
+  bottom: 7px;
+}
+
+.postProjectButton:focus {
+  outline: none;
+}
+
+
+.loadDisplayingCon {
+  margin-top: -32px;
+}
+
+.propertyDetailsFinalSubmitBtn {
+  margin-top: 48px;
+
+}
+
+.staticHeadingCon {
+  width: 100%;
+
+  flex-shrink: 0;
+  align-self: stretch;
+  border-bottom: 0.5px solid rgba(0, 153, 87, 0.21);
+  background: var(--White-3, #FFF);
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.projDetailsTextAreaInputOuterCon {
+  width: 100%;
+  height: auto;
+  margin-top:40px;
+}
+
+.newLaunchDtaeErrMsgClass {
+  top: 15px;
+  position: relative;
+ /*  margin-bottom: -15px; */
+ margin-bottom: -1px;
+}
+
+.localityMainOuterCon {
+  width: 100%;
+}
+
+.inputsSqftLable{
+  position:absolute;
+  left: 85%;
+  top:15px;
+  z-index:1;
+}
+
+.pac-target-input:focus{
+  border: 1px solid #148B16;
+  outline: none !important;
+}
+
+/* .pac-target-input:valid~.searchMapFieldLable, */
+.pac-target-input:focus~.searchMapFieldLable {
+  display:none;
+}
+
+.searchMapFieldLable{
+  left: 15px;
+  top: 24px;
+}
+
+.page2RenderingLoader{
+  z-index:5;
+  position: fixed;
+  top: 0;
+  border-radius: 0px !important;
+}
+
+.lableInnerSmallText{
+  font-size:14px;
+}
+
+  .singleSelectDropdownItem{
+    height: auto;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+
+  .singleSelectDropdownItem p{
+    font-size: 18px;
+  }
+
+  
+  .validInput{
+    border-color: #148B16 !important;;
+  } 
+
+  /* DELETE PHASES */
+  .editPopupBtnsCrossIcon {
+    width: 35px;
+    height: 35px;
+    flex-shrink: 0;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
+.editPopupMainHeading {
+    color: #202020;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.editPopupDescription {
+    color: #FF7A00;
+    text-align: center;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.editPopupBtnsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin-top: 5%;
+    margin-bottom: 3%;
+}
+
+.editPopupBtns {
+    border-radius: 6px;
+    border: 1px solid #0073C6;
+    background: #FFF;
+    padding: 10px;
+    color: #0073C6;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.editPopupEditBtn {
+    border-radius: 6px;
+    border: 1px solid #0073C6;
+    background: #0073C6;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.editPopupMainContainer {
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+}
+
+.floorplanDetailsPopupInnerCon{
+  width: 70%;
+  background: #FFF;
+  padding:1%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  max-width:1050px;
+}
+
+/* .projPhaseClearBtnCon{
+  margin-left: auto;
+  margin-right:10px
+} */
+
+.phaseDetailsBoxReraIdEl{
+  min-width: 360px !important;
+}
+
+.ql-container{
+  border: none !important;
+}
+
+.ql-editor em {
+  font-style: italic !important;
+}
+
+.completionDateCheckBoxAndBottomText{
+  display: flex;
+  gap:6px;
+  position: relative;
+  top:-4px;
+  align-items: center;
+}
+
+/* TAB */
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+
+  .postProjectButton {
+    /* width: 60%; */
+  }
+
+  .statusNames {
+    font-size: 16px;
+    white-space: wrap;
+  }
+
+  .googleMapHeading {
+    margin-top: 20px;
+  }
+
+  .postProjTrackerEditIcon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: px;
+  }
+
+  .sectionHeading {
+    font-size: 20px !important;
+    margin-bottom: 27px;
+  }
+
+  .custumOptionClass{
+    font-size: 14px;
+  }
+
+  .inputsSqftLable{
+    left: 80%;
+  }
+
+   .staticHeadingTextsCon{
+    padding:16px;
+    padding-left:3%;
+    padding-right:3%;
+    font-size:22px;
+  }
+
+  .localityFieldsMainCon,
+  .PDinputOuterContainerClassName {
+    width:320px;
+  }
+
+  .animatedInput {
+    height:45px;
+  }
+
+  .projDetailsTextAreaInputOuterCon {
+    margin-top:30px;
+  }
+
+  .phasesSectionHeading{
+    font-size:18px;
+  }
+
+  .animatedLabel {
+    font-size:18px;
+    line-height:6px;
+    top:20px;
+  }
+
+  .localityCustumFieldBtn{
+    top:-35px;
+  }
+
+  /* .animatedInput:valid~.animatedLabel, */
+  .afterSelectedLableClass,
+  .latLongInputsLable,
+  .animatedInput:focus~.animatedLabel{
+    top: -5px;
+    left: 15px;
+    font-size: 14px;
+   line-height:10px;
+  }
+
+  .singleSelectDropdownItem{
+    height: auto;
+    padding-top:5px;
+    padding-bottom:5px;
+  }
+
+  .singleSelectDropdownItem p{
+    font-size: 16px;
+  }
+
+  .maximumExcedlimit{
+    font-size:18px;
+  }
+
+  .floorplanDetailsPopupInnerCon{
+    width:83%;
+  }
+
+  .editPopupBtnsCrossIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .editPopupMainHeading {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .completionDateCheckBoxAndBottomText{
+    top:-10px;
+  }
+
+}
+
+/* 50% */
+@media only screen and (max-width: 600px) {
+
+  .localityFieldsMainCon{
+    width: 100%;
+  }
+
+  .localityMainOuterCon {
+    width: 100%;
+  }
+
+  .PDinputOuterContainerClassName {
+    width: 100%;
+  }
+
+  .animatedInput {
+    width: 100%;
+    height:40px;
+    font-size:16px;
+  }
+
+  .postProjBasicDetailsDropdownArrow {
+    left: 90%;
+  }
+
+  .sectionHeading {
+    font-size: 18px !important;
+    margin-bottom: 27px;
+  }
+
+  .googleMapHeading {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom:15px;
+  }
+
+  .editPopupBtns,
+  .animatedLabel {
+    font-size: 20px;
+  }
+
+  .postProjectButton {
+    width: auto;
+    font-size: 18px;
+    height: auto;
+    border-radius: 4px;
+    padding:10px;
+    padding-left:30px;
+    padding-right:30px;
+  } 
+
+  .statusNames {
+    font-size: 10px;
+    white-space: wrap;
+    width: 48px;
+  }
+
+  .postProjTrackerEditIcon {
+    width: 15px;
+    height: 15px;
+    margin-bottom: 7px;
+  }
+
+  .projDetailsTextAreaInputField {
+    font-size: 16px;
+  }
+
+  .addressField {
+    width: 100%;
+  }
+
+  .bottomBtnsAndErrCon {
+    margin-top: 0px;
+  }
+
+  .newLaunchDtaeErrMsgClass {
+    font-size: 10px;
+    margin-bottom: 0px;
+  }
+
+ .custumOptionClass{
+    font-size: 12px;
+  }
+
+  .maximumExcedlimit{
+    margin-top: 0px;
+    font-size:16px;
+    padding-right:0;
+  }
+
+   .inputsSqftLable{
+    left: 83%;
+     top:10px;
+  }
+
+  .staticHeadingTextsCon{
+    padding:14px;
+    font-size:20px;
+    top:0;
+    position:absolute;
+  }
+
+  .displayMapContainerClass {
+    height: 230px;
+  }
+
+  .localityFieldsMainCon,
+  .PDinputOuterContainerClassName {
+    /* width:46%;
+    max-width:236px; */
+    margin-bottom:10px
+  }
+
+  .PropjectDetailsMainCon {
+      padding:3%;
+     padding-top:60px;
+  }
+
+  .postProjBasicDetailsDropdownArrow {
+      width: 20px;
+      height: 20px;
+      bottom: 30px;
+      left: 90%;
+      transition-duration: 0.5s;
+  }
+
+  .animatedLabel {
+    font-size: 16px;
+    line-height:10px;
+    left: 18px;
+    top: 20px;
+  }
+
+  /* .animatedInput:valid~.animatedLabel, */
+  .afterSelectedLableClass,
+  .latLongInputsLable,
+  .animatedInput:focus~.animatedLabel{
+    top: -5px;
+    left: 15px;
+    font-size: 14px;
+   line-height:10px;
+  }
+
+  .requiredStar {
+    font-size: 18px;
+  }
+
+  .cladenarIconInput{
+    top:8px !important;
+  }
+
+  .projDetailsTextAreaInputField {
+    font-size: 18px;
+  }
+
+  .sectionAboutHeading{
+    margin-top: 3%;
+  }
+
+  .projDetailsTextAreaInputOuterCon {
+    margin-top:24px;
+  }
+
+  .phasesSectionHeading{
+    font-size:16px;
+  }
+  .postProjBasicDetailsDropdownArrow {
+    top: -35px;
+  }
+
+  .lableInnerSmallText{
+    font-size:12px;
+  }
+
+  .localityCustumFieldBtn{
+    top:-25px;
+  }
+
+  .singleSelectDropdownItem{
+    height: auto;
+    padding-top:3px;
+    padding-bottom:3px;
+  }
+
+   .singleSelectDropdownItem p{
+    font-size: 14px;
+  }
+
+  .floorplanDetailsPopupInnerCon{
+    width:83%;
+    padding:10px;
+  }
+
+  .editPopupBtnsCrossIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .editPopupMainHeading {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .editPopupBtnsContainer {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .editPopupBtns {
+    font-size: 16px;
+    padding: 6px;
+  }
+
+  .editPopupBtns svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .phaseDetailsBoxReraIdEl{
+    min-width: 160px !important;
+  }
+
+  .raraFieldsMainCon{
+    flex-wrap: wrap;
+  }
+
+  .ql-editor{
+    font-size: 16px;
+  }
+
+   .completionDateCheckBoxAndBottomText{
+    top:-12px;
+  }
+}

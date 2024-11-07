@@ -1,0 +1,975 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Montserrat;
+    font-style: normal;
+  }
+
+.postProjectMidiaPageMainCon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0px;
+    width: 100%;
+    align-self: center;
+    padding-left: 3%;
+    height: 100%;
+    overflow-y: auto;
+    padding-top:80px;
+}
+
+.postProjectMidiaMainCon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 80px;
+    width: 100%;
+    align-self: center;
+}
+
+.NewMediaUploadBoxMainCon{
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 29px;
+    width: 100%;
+    justify-content:center;
+}
+
+.NewMediaUploadBoxMainCon .postProjectMidiaBox{
+    width:79%;
+    min-height: 0;
+}
+
+.postProjectMidiaBoxHeading {
+    color: #333;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 23px;
+    align-self: flex-start;
+    width: 100%;
+    max-height: 300px;
+    margin-bottom: 2%;
+}
+
+.postProjectMidiaBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+}
+
+.postProjectImagesDisplayBox {
+    width: 20%;
+    height: 100%;
+    flex-shrink: 0;
+    border: 1px solid #e0d9d9;
+    border-radius: 8px;
+    margin-right: 4%;
+    background: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:300px;
+}
+
+.newMediaImagesDisplayBox{
+    width: 23%;
+    height: 80px;
+    flex-shrink: 0;
+    /* border: 1px solid #e0d9d9; */
+    border-radius: 8px;
+    margin-right: 4%;
+    background: #F1F1F1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newMediaImagesDisplayBox p{
+    background: linear-gradient(90deg, #4D6677 0%, rgba(86, 87, 87, 0.00) 100%);
+}
+
+.postProjectImagesUploadBox {
+    width: 70%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1.5px dashed var(--secondary-blue-1, #0073C6);
+    background: var(--white-3, #FFF);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height:300px;
+    padding-top:15px;
+    max-width:1080px;
+}
+
+.newMediaImagesUploadBox{
+    width: 100%;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 1.5px dashed var(--secondary-blue-1, #0073C6);
+    background: var(--white-3, #FFF);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left:10%;
+    padding-right:10%;
+}
+
+.newMediaImagesUploadBox .imageFilesCon{
+    min-width:0;
+    width:90%;
+}
+
+.insideCon {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    justify-content:space-between;
+    flex-direction:column;
+    height:90%;
+    gap:0px;
+    text-align:center;
+}
+
+.insideCon p {
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.insideCon span {
+    color: rgba(0, 0, 0, 0.40);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.uploadImgIcon {
+    width: 50%;
+    height: 40%;
+    flex-shrink: 0;
+}
+
+.newUploadImgIcon{
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    height:80px;
+    border: 1px solid #e0d9d9;
+    border-radius: 8px;
+}
+
+.cloudIcon svg,
+.cloudIcon {
+    width: 73px;
+    height: 73px;
+}
+
+.upoladMediaFileBtn {
+    border-radius: 5px;
+    border: 1px solid var(--secondary-blue-1, #0073C6);
+    background: #FBFDFE;
+    color: var(--secondary-blue-1, #0073C6);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    white-space:nowrap;
+    padding:12px;
+    padding-left:16px;
+    padding-right:16px;
+}
+
+.mediaErrMsg {
+    color: #F00;
+    font-size: 20px !important;
+    font-weight: 500;
+    padding-left:10px;
+    text-align: center;
+}
+
+.ifMediaAdded {
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    width: 70%;
+    height: auto;
+    gap:28px;
+    /* min-width:710px; */
+}
+
+.ifMediaAdded div{
+    margin-right:auto; 
+    text-align:center;
+}
+
+.displayImage {
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    user-select:none;
+    border: 1px solid #e0d9d9; 
+}
+
+.newDisplayImage{
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    max-width:103px;
+    border: 1px solid #c4bfbf; 
+}
+
+.imageFilesCon {
+    width: 57%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width:680px;
+}
+
+.mediaDetailsMainCon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 24px;
+    flex-shrink: 0;
+    margin-bottom: 12px;
+}
+
+.mediaNameDislayBox {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.mediaNameDislayBox p {
+    color: var(--black-2, #333);
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 16.5px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.mediaRequired {
+    color: var(--mandatory, #F00);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.filesAddingHeading {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 9px;
+    align-self: flex-start;
+}
+
+.mediaBoxSideIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fileAndDeleteIcons {
+    cursor: pointer;
+}
+
+.projectMediaBtnOne {
+    display: flex;
+    height: 78px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    background: var(--Secondary-Blue-1, #0073C6);
+    border: none;
+    color: #FFF;
+    font-size: 24px;
+    font-weight: 700;
+    width: 32%;
+}
+
+.projectMediaBtnTwo {
+    display: flex;
+    height: 78px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    border: 1px solid #0073C6;
+    color: #0073C6;
+    font-size: 24px;
+    font-weight: 700;
+    background: transparent;
+    width: 100%;
+}
+
+#loaderForProjectimages {
+    align-self: center;
+}
+
+.editIconForSecondMediaLable {
+    position: relative;
+    top: 2px;
+}
+
+/* Corosals */
+
+/* .imagesCarosalsCon {
+    min-height:
+} */
+
+.imageBoxArrowsCon {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: -32px;
+    position: relative;
+    bottom: 50px;
+}
+
+
+.imageBoxLeftAndRightArrow {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select:none;
+}
+
+.leftArrowIcon{
+    transform: rotate(180deg);
+}
+
+.imagesCarosalsCon,
+.imagesCarosalsMainCon{
+    width:100%;
+    height:100%;
+}
+
+
+/* video upload css */
+.newUploadDetailsTextBox{
+    display:flex;
+    border-radius: 4px;
+    background: #EDF8FF;
+    max-width: 600px;
+    width:100%;
+    justify-content: space-between;
+    padding:10px;
+    flex-wrap:wrap;
+    gap:4px;
+}
+
+.newUploadDetailsTextInnerBox{
+    display:flex;
+    flex-direction:column;
+}
+
+.newVideoUploadBtn{
+    border-radius: 5px;
+    border: 1px solid #0073C6;
+    background: #FBFDFE;
+    height: auto;
+    color: #0073C6;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space:nowrap;
+    height:40px;
+    display:flex;
+    align-items:center;
+    padding:10px;
+    cursor:pointer;
+}
+
+.videoFileAndDeleteIcons{
+    width: 20px;
+    height: 20px;
+    cursor:pointer;
+}
+
+.displayingEditIconsAndText{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+.videoUploadFileNameTextWithIcons{
+    display:flex;
+    align-items:center;
+    gap:4px;
+}
+
+.videoUploadFileNameTextWithIcons span{
+   color: #333;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.uTubeVideoURLuploadFieldBox{
+    display: flex;
+    border-radius: 8px;
+    border: 0.8px solid #4D6677;
+    background: #FFF;
+    padding:4px;
+    padding-left: 10px;
+    padding-right: 6px;
+    width:100%;
+    max-width:600px;
+    align-items:center;
+    gap:10px;
+}
+
+.uTubeVideoURLuploadFieldOuterCon{
+    width:100%;
+}
+
+.uTubeVideoURLuploadField{
+    width:100%;
+    color: #505050;
+    font-size: 20px;
+    font-weight: 400;
+    height:36px;
+    border:none;
+}
+
+.videoURLuploadBtn{
+    border-radius: 5px;
+    border: 1px solid #0073C6;
+    background: #0073C6;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space:nowrap;
+    padding:6px;
+    cursor:pointer;
+}
+
+.uTubeVideoURLuploadField:focus{
+    outline: none;
+}
+.videoUploadBoxHr{
+    width:100%;
+    max-width:600px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin-top:30px;
+    margin-bottom:30px;
+    position: relative;
+}
+
+.videoUploadBoxHr hr{
+    width:100%;
+    max-width:600px;
+    border-bottom:1px solid #98A5B8;
+}
+
+.videoUploadBoxHr span{
+    position:absolute;
+    top: -12px;
+    background: white;
+    color: #000;
+    font-size: 19px;
+    font-weight: 400;
+    text-transform: lowercase;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.videoUploadBoxHeading{
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.videoUploadFileAddedText{
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.videoUploadFileSvg{
+   margin-left: 10px; 
+}
+.videoDataLimitText{
+    margin-right: 10px;
+}
+
+.postProjectImagesDisplayBox .video-responsive{
+    width:100%;
+    height:100%;
+}
+
+.pdfPopupMaxlimitErrorMsg{
+    color: #F00;
+    font-size: 16px;
+    text-align: right;
+    white-space: nowrap;
+}
+
+.ImageLoaderBlockMainCon{
+    width:100%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom:12px;
+}
+
+.progressBarInnerSection{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 5px;
+}
+
+.progressBarSection{
+    width:100%;
+    margin-left: 16px;
+}
+
+.progressBarHoldingCon{
+     width:100%;
+    background: rgba(0, 0, 0, 0.10);
+    border-radius: 4px;
+}
+
+.progressBarText{
+    color: rgba(0, 0, 0, 0.40);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.ImageLoaderBlockMainCon svg{
+    opacity: 0.5;
+}
+
+.progressBarHoldingCon{
+    width: 100%;
+    max-width:100%;
+}
+
+.progressBar{
+    height: 4px;
+    background-color: #0F91D2;
+    border-radius: 4px;
+    max-width:100%;
+}
+
+
+
+/* Tabs */
+@media only screen and (min-width: 600px) and (max-width: 1280px) {
+    .postProjectMidiaBox {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 72%;
+        min-height: 200px;
+        height:100%;
+        max-height:300px;
+    }
+
+    .imagesCarosalsMainCon{
+        width:100%;
+        height:100%;
+    }
+
+    .postProjectMidiaMainCon {
+        gap: 22px;
+        margin-bottom: 80px;
+        width: 100%;
+    }
+
+    .ifMediaAdded {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap:0;
+    }
+
+    .ifMediaAdded svg {
+        width: 61px;
+        height: 59px;
+    }
+
+    .ifMediaAdded div {
+        width: 70%;
+        margin-right:0;
+    }
+
+    .ifMediaAdded label {
+        margin-top:6px;
+    }
+
+    .postProjectImagesDisplayBox {
+        width: 30%;
+        margin-right: 3%;
+        min-width:180px;
+        min-height:200px;
+        height:100%;
+    }
+
+    .cloudIcon svg,
+    .cloudIcon {
+        width: 51px;
+        height: 49px;
+    }
+
+    .postProjectImagesUploadBox {
+        justify-content: flex-start;
+        width:88%;
+        min-height: 200px;
+        height:100%;
+        margin-top:1px;
+    }
+
+    .postProjectMidiaBoxHeading {
+        margin-bottom: 0;
+    }
+
+    .projectMediaBtnOne {
+        width: 35%
+    }
+
+    .NewMediaUploadBoxMainCon{
+        width: 100%;
+    }
+
+    .displayImage {
+        height:100%;
+    }
+
+    .postProjectImagesDisplayBox video{
+        height: 200px;
+    }
+
+    .ifMediaAdded{
+        width:82%;
+        min-width:340px;
+    }
+
+    .imageFilesCon{
+        min-width:340px;
+    }
+
+    .videoUploadBoxHeading,
+    .ifMediaAdded p{
+        font-size:20px;
+    }
+
+    .uTubeVideoURLuploadField,
+    .ifNoVideoUrlText,
+    .ifMediaAdded span{
+        font-size:16px;
+    }
+
+    .newVideoUploadBtn,
+    .upoladMediaFileBtn {
+        font-size: 14px;
+        padding:6px;
+        padding-left:10px;
+        padding-right:10px;
+    }
+
+    .newVideoUploadBtn{
+        height:32px;
+    }
+    
+     .mediaErrMsg {
+        font-size: 16px !important;
+    }
+
+    .newMediaBoxContant svg{
+        width: 16px;
+        height: 16px;
+    }
+
+    .videoUploadBoxHr{
+        width:96%;
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .uTubeVideoURLuploadFieldBox,
+    .newUploadDetailsTextBox{
+        width:96%;
+    }
+
+    .videoUploadFileSvg{
+       margin-left: 8px; 
+    }
+    .videoDataLimitText{
+        margin-right: 8px;
+    }
+
+}
+
+/* 50% */
+@media only screen and (max-width: 600px) {
+    .postProjectImagesDisplayBox {
+        width: 40%;
+        margin-right: 3%;
+        min-height:171px;
+    }
+
+    .postProjectMidiaBox {
+        width: 88%;
+        height: 100%;
+    }
+
+    .cloudIcon svg,
+    .cloudIcon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .insideCon{
+        text-align: center;
+    }
+
+    .insideCon p {
+        font-size: 12px;
+        text-align: center;
+        line-height:10px;
+    }
+
+    .insideCon span {
+        font-size: 11px;
+        line-height:0;
+    }
+
+    .upoladMediaFileBtn {
+        font-size: 10px;
+        padding:6px;
+        margin-top:6px;
+    }
+
+    .ifMediaAdded {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+        height: auto;
+        gap:0;
+    }
+
+    .ifMediaAdded svg{
+        width: 29px;
+        height: 29px;
+        margin-bottom:3px;
+    }
+
+    .ifMediaAdded div {
+        margin-right:0;
+    }
+
+    .ifMediaAdded p {
+        font-size: 12px;
+        text-align:center;
+        line-height:13px;
+        margin-bottom:2px;
+        font-weight:600;
+    }
+
+    .ifMediaAdded span {
+        font-size: 10px;
+    }
+
+    .displayImage {
+        height: 182px;
+    }
+
+    .postProjectMidiaBoxHeading {
+        font-size: 16px !important;
+        margin-bottom: 1% !important;
+    }
+
+    .fileAndDeleteIcons {
+        width: 11.667px;
+        height: 15px;
+    }
+
+    .mediaNameDislayBox p {
+        font-size: 10px;
+    }
+
+    .mediaDetailsMainCon {
+        margin-bottom: -10px;
+    }
+
+    .mediaErrMsg {
+        font-size: 10px !important;
+    }
+
+    .filesAddingHeading {
+        display: none;
+    }
+
+    .projectMediaBtnOne {
+        width: 66%
+    }
+
+    .postProjectImagesUploadBox {
+        min-height:182px;
+        padding-top:7px;
+        height:100%;
+    }
+
+    .NewMediaUploadBoxMainCon{
+        width: 100%;
+    }
+
+    .postProjectMidiaMainCon {
+        margin-bottom: 40px;
+    }
+
+    .ifMediaAdded{
+        width:82%;
+        min-width:0;
+    }
+
+    .imageFilesCon{
+        min-width:0;
+        width:80%
+    }
+
+    .mediaBoxSideIcons {
+        gap: 6px;
+    }
+
+    .mediaNameDislayBox p {
+        font-weight: 400;
+        margin-left: 7px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .postProjectImagesDisplayBox video{
+        height: 100%;
+        width:100%;
+    }
+
+    .newMediaImagesUploadBox{
+        padding-left:5%;
+        padding-right:5%;
+    }
+
+    .newMediaBoxIcons svg{
+        width: 20px;
+        height: 20px;
+    }
+
+     .postProjectImagesDisplayBox video{
+        max-height: 182px;
+    }
+
+    .postProjectMidiaPageMainCon {
+        padding:0;
+        padding:10px;
+        padding-top:60px;
+    }
+
+    .imageBoxLeftAndRightArrow {
+        width: 28px;
+        height: 28px;
+    }
+
+    .newUploadDetailsTextBox{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .videoUploadBoxHeading{
+        font-size:12px;
+        text-align:center;
+        font-weight:600;
+    }
+
+    .ifNoVideoUrlText{
+        font-size:12px;
+        text-align:center;
+    }
+
+    .newVideoUploadBtn{
+        font-size: 10px;
+        padding:6px;
+        height: 27px;
+        margin-top:8px;
+    }
+
+    .uTubeVideoURLuploadField{
+        font-size:14px;
+        height:27px;
+    }
+
+    .videoUploadBoxHr span{
+        font-size:14px;
+        top: -10px;
+    }
+
+    .videoUploadBoxHr{
+        width:90%;
+        margin-top:10px;
+        margin-bottom:10px;
+    }
+
+    .uTubeVideoURLuploadFieldBox,
+    .newUploadDetailsTextBox{
+        width:96%;
+    }
+
+    .videoURLuploadBtn{
+        border-radius: 4px;
+        font-size: 10px;
+        padding:4px;
+    }
+
+    .uTubeVideoURLuploadFieldBox{
+        border-radius: 4px;
+        padding:4px;
+        padding-left: 4px;
+        padding-right: 4px;
+        gap:4px;
+        margin-bottom:4px;
+    }
+
+    .newUploadDetailsTextBox{
+        padding: 4px;
+    }
+
+    .videoUploadFileSvg{
+       margin-left: 4px; 
+    }
+    .videoDataLimitText{
+        margin-right: 4px;
+    }
+
+    .pdfPopupMaxlimitErrorMsg{
+        white-space: normal;
+    }
+}

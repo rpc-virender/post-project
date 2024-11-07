@@ -1,0 +1,470 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-style: normal;
+}
+
+.projectAdminPreviewStaticCon {
+  position: fixed;
+  top: 66px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 5;
+  overflow-y: auto;
+  height: calc(100% - 66px);
+}
+
+.projectAdminPreviewinnerPopupCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background: white;
+  border-radius: 10px;
+  overflow-y: auto;
+  width: 35%;
+  flex-shrink: 0;
+  padding: 2%;
+  padding-top: 15px;
+  position: relative;
+  z-index: 3;
+  overflow-x: hidden;
+  min-width: 370px;
+  overflow-y: auto;
+  max-height: 90%;
+  overflow-y: auto;
+}
+
+.propPhasesAnimatedLabelClass {
+  color: var(--Black-3, #505050);
+  font-size: 12px;
+  font-weight: 300;
+
+  position: absolute;
+  left: 10px;
+  top: 18px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.phasesAnimatedInputClass:focus~.propPhasesAnimatedLabelClass,
+.phasesAnimatedInputClass:valid~.propPhasesAnimatedLabelClass {
+  top: 3px;
+  left: 5px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+  color: #148B16;
+  height: 16px;
+}
+
+.propPhasesAnimatedInputOuterContainer {
+  width: 35%;
+  margin-top: 20px;
+  position: relative;
+  left: 10%;
+}
+
+.propPhasesAnimatedInputContainerClass {
+  position: relative;
+  width: 100%;
+  height: 34px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-bottom: 34px;
+  align-self: flex-end
+}
+
+.phasesAnimatedInputClass {
+  display: flex;
+  width: 100%;
+  height: 37px;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 0.8px solid var(--GREY4, #C9C9C9);
+  background: #FCFCFC;
+}
+
+.phasesAnimatedInputClass:focus {
+  outline: none;
+}
+
+.adminPopupCrossIcon {
+  align-self: flex-end;
+  position: relative;
+  right: 1%;
+}
+
+.popupInputsMainContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.propAnimatedLabelClass {
+  color: var(--Black-3, #505050);
+  font-size: 16px;
+  font-weight: 300;
+
+  position: absolute;
+  left: 10px;
+  top: 23px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.customDetailsInputLableCl {
+  top: -5px;
+  left: 8px;
+  font-size: 15px;
+  padding: 0 2px;
+  background: white;
+  height: 20px;
+}
+
+
+
+.propAnimatedInputContainerClass {
+  position: relative;
+  width: 100%;
+  height: 34px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  margin-bottom: 34px;
+}
+
+.popupInputBlock {
+  width: 47%;
+
+}
+
+.unitTypeFirstCon {
+  width: 100%;
+  display: flex;
+}
+
+
+
+.propAnimatedInputClass {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  padding: 15px 10px;
+  align-items: center;
+  gap: 83px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 0.8px solid var(--GREY4, #C9C9C9);
+  background: #FCFCFC;
+}
+
+.customInputCom{
+  margin-left: 5px;
+}
+
+.propAnimatedInputOuterContainer {
+  width: 100%;
+  position: relative;
+}
+
+.IfCoustumCon {
+  width: 20%;
+}
+
+.propAnimatedInputClass:focus {
+  border: 0.8px solid var(--brand-green-primary, #148B16);
+}
+
+/* .propAnimatedInputClass:valid~.propAnimatedLabelClass , */
+.propAnimatedInputClass:focus~.propAnimatedLabelClass{
+  top: 1px;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+  color: #148B16;
+  height: 20px;
+  max-width:90%;
+  display:flex;
+  line-height:12px;
+}
+
+.validPropAnimatedLabelClass{
+  top: 1px;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+  color: #148B16;
+  height: 20px;
+  max-width:90%;
+  display:flex;
+  line-height:12px;
+}
+
+.propCrossIcon {
+  width: 36px;
+  height: 36px;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.popupBottomContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.popupMediaUploadPart {
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.popupSubmitButtonCon {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.popupSubmitButton {
+  justify-content: flex-end;
+  align-items: center;
+  border: none;
+  border-radius: 5px;
+  background: #0073C6;
+
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 600;
+  padding:10px;
+
+}
+
+.cssForText {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cssForText p {
+  margin: 0;
+  margin-bottom: 0px;
+  color: #000;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.cssForText span {
+  color: rgba(0, 0, 0, 0.40);
+  text-align: center;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.cssForText label {
+  border: none;
+  background: transparent;
+  white-space: nowrap;
+  height: 20px;
+  margin: 0;
+}
+
+.cssForText div {
+  text-align: center;
+}
+
+.displayFloorplanImgClass {
+  height: 80px;
+}
+
+.mediaIconsDislayBox {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.propAnimatedInputClass:focus {
+  outline: none;
+}
+
+.projectAdminPreviewPopupHeadingCon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 26px;
+}
+
+.projectAdminPreviewPopupHeadingCon h3 {
+  color: #4D6677;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+.customDetailsInputLable {
+  top: -5px;
+  left: 15px;
+  font-size: 15px;
+  padding: 0 2px;
+  background: white;
+  height: 20px;
+}
+
+.errorMsgForPopupDetailDropdown {
+  color: #FF1F00;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 500;
+  align-self: center;
+  position: relative;
+  top: -20px;
+  text-align: center;
+  margin: 0;
+}
+
+.basementLabelClass {
+  color: var(--Black-3, #505050);
+  font-size: 16px;
+  font-weight: 300;
+  position: absolute;
+  left: 10px;
+  top: 23px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.basementLabelSelected {
+  top: 1px;
+  left: 15px;
+  font-size: 12px;
+  padding: 0 2px;
+  background: white;
+  color: #148B16;
+  height: 20px;
+  max-width:90%;
+  display:flex;
+  line-height:12px;
+}
+
+.newMediaboxtextCon p{
+  font-weight:600;
+}
+
+.newMediaboxtextCon span{
+  color:#666666
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1400px) {
+  .projectAdminPreviewinnerPopupCon {
+    width: 53%;
+  }
+.projectAdminPreviewStaticCon{
+  height: calc(100% - 62px);
+  top: 62px;
+}
+
+
+  #styleForUploadIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .popupMediaUploadPart {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  .propPhasesAnimatedInputOuterContainer {
+    width: 30%;
+    margin-top: 20px;
+    position: relative;
+    left: 10%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .projectAdminPreviewinnerPopupCon {
+    width: 90%;
+  }
+
+
+  .cssForText label {
+    font-size: 16px;
+    height: auto;
+    white-space: initial;
+    margin: 0px;
+    margin-top: 0px
+  }
+
+  .cssForText span {
+    text-align: center;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .popupMediaUploadPart {
+    position: relative;
+    margin-top: 20px;
+  }
+
+  #styleForUploadIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .propPhasesAnimatedInputOuterContainer {
+    width: 30%;
+    margin-top: 20px;
+    position: relative;
+    left: 5%;
+  }
+
+  .projectAdminPreviewPopupHeadingCon {
+    margin-bottom: 20px;
+  }
+  .projectAdminPreviewStaticCon{
+    top: 56px;
+    height: calc(100% - 56px);
+  }
+
+/* .propAnimatedInputClass:valid~.propAnimatedLabelClass , */
+.propAnimatedInputClass:focus~.propAnimatedLabelClass {
+  top: -3px;
+  left: 15px;
+  font-size: 10px;
+  padding: 0 2px;
+  background: white;
+  color: #148B16;
+  height: auto;
+
+  white-space:wrap;
+  max-width:90%;
+
+  display:flex;
+  align-items:center;
+}
+
+
+}

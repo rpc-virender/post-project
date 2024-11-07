@@ -1,0 +1,1244 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-style: normal;
+}
+
+.poetProjPreviewMainCon{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 4%;
+  padding-right: 4%;
+  height: 100%;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scroll-margin-top:110px;
+  padding-top:100px;
+  padding-bottom:3%;
+}
+
+.staticHeadingTextsPreviewCon{
+margin-bottom:40px;
+}
+
+.staticHeadingTextsPreviewCon h2{
+color: #222;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 24px;
+font-weight: 600;
+line-height: 23px;
+margin-bottom:14px;
+}
+
+.staticHeadingTextsPreviewCon span{
+color: #4D6677;
+font-size: 20px;
+font-style: italic;
+font-weight: 500;;
+}
+
+.previewProjAndContant{
+  margin-bottom:36px;
+  display:flex;
+  align-items:center;
+}
+
+.previewProjAndContant svg{
+  height:60px;
+}
+
+.previewProjAndContantInnerBox{
+  margin-left:20px;
+  text-transform: capitalize;
+}
+
+.previewProjAndContant h2{
+color: #001F35;
+font-size: 22px;
+font-weight: 600;
+ margin-bottom:8px;
+}
+
+.previewProjAndContant p{
+color: #4D6677;
+font-size: 20px;
+font-style: italic;
+font-weight: 500;
+}
+
+.previewDetailsPhasesCon{  
+  margin-bottom: 3%;
+}
+
+.previewDetailsHoldCon{
+    border-radius: 10px;
+    background: linear-gradient(90deg, #F6F6F6 0%, #FCFCFC 45.83%, #FEFFFF 100%);
+    box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+    padding:20px;
+    margin-bottom:40px;
+}
+
+.detailsNameAndEditCon{
+  display:flex;
+  align-items:center;
+  gap:32px;
+}
+
+.detailsNameText{
+  color: #001F35;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.projectDetailsPreviewBtn{
+  color: #0073C6;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 23px;
+  border:none;
+  background:transparent;
+  display:flex;
+  flex-direction:row-reverse;
+  gap:8px;
+  display:flex;
+  align-items:flex-end;
+}
+
+.projectheadingPreviewBtn{
+  position:relative;
+  bottom:3px;
+}
+
+.postProjPreviewEditBtn{
+  width: 20px;
+  height: 20px !important;
+  position:relative;
+  bottom:3px;
+}
+
+.previewDetailsHoldInnerCon{
+  display:flex;
+  gap:6%;
+  flex-wrap:wrap;
+}
+
+.projDetailsCardMianCon{
+gap:8px;
+margin-top:26px;
+}
+
+.projDetailsCardHeading{
+color: #242424;
+font-size: 18px;
+font-weight: 500;
+margin-bottom:8px;
+}
+
+.projDetailsCardText{
+  color: #242424;
+  font-size: 20px;
+  font-weight: 700;
+  word-break:break-word;
+}
+
+.previewPhaseBox .projDetailsCardText{
+  word-break:break-all;
+}
+
+.previewMapHaeding{
+  color: #148B16;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-top:30px;
+  margin-bottom:20px;
+}
+
+.newMapToolTip{
+color:#FFF !important;
+bottom:-5px;
+background:green !important;
+border:none!important;
+}
+
+.newMapToolTip:before {
+border-top-color: #148b16 !important;
+}
+
+.newMapToolTip p{
+font-size: 12px !important;
+font-style: italic !important;
+font-weight: 500;
+}
+
+.newMapToolTip span{
+font-size: 14px !important;
+font-weight: 800 !important;
+}
+
+.phaseDetailsHeading{
+  color: #001F35;
+  font-size: 22px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.phaseDetailsHeading span{
+  color: #148B16;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.phaseDetailsContant{
+  color: #4D6677;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 23px;
+  margin-top:8px;
+}
+
+.phaseDetailsHrLine{
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px solid #92B2C8;
+  margin-top:2%;
+  margin-bottom:2%;
+}
+
+.previewPhaseBox{
+  border-radius: 4px;
+  border: 1px solid #92B2C8;
+  background: #FFF;
+  padding: 16px;
+  padding-bottom: 16px;
+}
+
+.previewPhaseBox svg{
+  height: 24px;
+  width:24px;
+}
+
+.previewDetailsPhasesCon{
+  gap:3%;
+}
+
+.dashboardReadMoreSpan{
+  color: #0073C6;
+  text-transform: capitalize;
+  cursor:pointer;
+  white-space:nowrap;
+  color: #0073C6;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.previewAbout{
+  color: #505050;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-top: 2%;
+  white-space: pre-wrap;   
+  word-wrap: break-word;    
+  overflow-wrap: break-word;
+}
+
+.shortListPropTypeBtn {
+  border-radius: 8px;
+  background: #ECF7FF;
+  color: #000;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 20px;
+  font-weight: 400;
+  border:none;
+  padding:7px;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  margin-right:10px;
+  margin-bottom:10px;
+  padding-left:10px;
+  padding-right:10px;
+}
+
+.propTypeBtnSelected{
+  border: 1px solid var(--blue-stroke-linear, #0073C6);
+  box-shadow: 0px 4px 14px 0px rgba(116, 196, 255, 0.19);
+  font-weight: 600;
+}
+
+.propsPreviewText{
+color: #000;
+font-feature-settings: 'clig' off, 'liga' off;
+font-size: 22px;
+font-weight: 500;
+margin-bottom:1.5%;
+}
+
+.phaseAndPropShower{
+  background: #EAFFEA;
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px;
+  margin-top:20px;
+  margin-bottom:30px;
+  margin-right:auto;
+  gap:4px;
+}
+
+.phaseAndPropShower span{
+  color: #005402;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.priceIconWithText{
+  color: #00487C;
+  font-size: 20px;
+  font-weight: 600;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.priceIconWithText svg{
+  width:24px;
+  height:24px;
+}
+
+.previewPriseBox{
+  padding:16px;
+}
+
+.previewPriseBox .projDetailsCardHeading{
+  color: #202020;
+  font-size: 22px;
+  font-weight: 600;
+  margin-top:3%;
+}
+
+.minAndMaxPricePreview .projDetailsCardText{
+  color: #4D6677;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.minAndMaxPricePreview .priceIconWithText{
+  font-weight: 500;
+}
+
+.imageTypeEditIcon{
+  cursor: pointer;
+}
+
+.imageTypeBtn{
+  text-transform: capitalize;
+  border: none;
+  display:flex;
+  align-items:center;
+  flex-direction:row-reverse;
+  gap:10px;
+  color: #000;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius: 4px;
+  background: #ECF7FF;
+  padding:6px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.imageTypeBtnSelected{
+  font-weight: 700;
+  border: 1px solid var(--b, #0073C6);
+  box-shadow: 0px 4px 14px 0px rgba(116, 196, 255, 0.19);
+}
+
+.imageTypeSectionMainCon{
+  display:flex;
+  gap:2%;
+  margin-top:2%;
+}
+
+.imageTypeSectionImageDisplayBlock{
+  display: flex;
+  max-width: 1045px;
+  height: 420px;
+  border-radius: 14px;
+  background:  lightgray;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.10);
+  width:65%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  position:relative;
+}
+
+.imagePreviewTabIcon{
+  align-self: flex-end;
+  margin-left: auto;
+  position:absolute;
+  width:100%;
+  padding-right:20px;
+  padding-bottom:20px;
+  display:flex;
+  align-items:flex-end;
+  justify-content:flex-end;
+  user-select:none;
+}
+
+.imagePreviewTabIcon span svg{
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+
+.imageTypeImageDisplay{
+    height: 100%;
+    width:100%;
+    border-radius: 14px;
+    object-fit:fill
+}
+
+.imageTypeSectionImageBoxesBlock{
+  width:35%;
+  gap:30px;
+}
+
+.imageTypeSectionImageBoxesBlock h2{
+  color: #737579;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 16px;
+}
+
+.imageTypeEachImage{
+  width: 152px;
+  height: 94px;
+  border-radius: 5px;
+  border: 1.5px solid #4D6677;
+  box-shadow: 0px 4px 20px 0px rgba(91, 143, 182, 0.19);
+  cursor:pointer;
+}
+
+.previewTypeBtnsCon{
+  gap:20px;
+}
+
+.defaultImgBoxCon{
+  width: 152px;
+  height: 94px;
+}
+
+.imageTypeEachImageCon{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius: 5px;
+  border: 5px solid var(--blue-gradient, #0073C6);
+  box-shadow: 0px 4px 45.1px 0px rgba(15, 145, 210, 0.24);
+  transition-duration:0.5s;
+}
+
+.imageTypeEachImageCon .imageTypeEachImage{
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  border:none;
+  pointer-events: none;
+}
+
+.imageTypeEachVideoIcon{
+  position:absolute;
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-end;
+  width:100%;
+  height:100%;
+}
+
+.imageTypeEachVideoIcon svg{
+  margin:5px;
+}
+
+
+.prevSpecDefaultBtn{
+  display: flex;
+  flex-direction: row-reverse;
+  margin:0;
+}
+
+.previewSpecificationsBlock{
+  border-radius: 4px;
+  border: 1px solid #E0E0E0;
+  background: #FCFCFC;
+  max-width:1023px;
+  margin-right:auto;
+  gap:20px;
+  margin-top:30px;
+  padding:16px;
+  display:flex;
+  flex-direction:column;
+  word-break:break-word;
+}
+
+.previewSpecificationsBlock h2{
+  border-radius: 10px;
+  background: linear-gradient(90deg, #D4EDFF -44.59%, rgba(245, 251, 255, 0.12) 100%);
+  color: #00487C;
+  font-size: 24px;
+  font-style: italic;
+  font-weight: 600;
+  padding:10px;
+  margin-right:auto;
+}
+
+.previewSpecificationsBlock ul{
+  margin-left:30px
+}
+
+.previewSpecificationsBlock ul li{
+  color: #233333;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom:1%;
+}
+
+.previewImagesBlockMainBlock{
+  margin-bottom:4%;
+}
+
+.previewAmenityBox{
+  border-radius: 10px;
+  border: 1px solid #92B2C8;
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  gap:8px;
+  padding: 6px;
+  color: #001F35;
+  font-size: 16px;
+  font-weight: 600;
+  word-break:break-word;
+}
+
+.previewAmenityBox svg{
+    width:20px;
+}
+
+.previewAmenityBoxsCon{
+  gap:26px;
+}
+
+.previewWhyBuyThis,
+.previewAmenityBoxsCon{
+  margin-bottom: 12px;
+}
+
+.previewWhyBuyThis{
+    margin-bottom: 32px;
+}
+
+.previewHighlightPoints{
+  color: #212C33;
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  margin-bottom: 14px;
+  gap:10px;
+  word-break:break-word;
+}
+
+.previewHighlightPoints svg{
+  min-width: 24px;
+  height: 24px;
+}
+
+.previewBankCardCon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap:12px;
+  margin-top: 24px;
+  width: 145px;
+  background:#f5f5f5;
+  padding:10px;
+  border-radius: 4px;
+  border:1px solid #a7b7c3
+}
+
+.previewBankCardCon img{
+  width: 100%;
+  height: 65px;
+}
+
+.previewBankCardCon p{
+  color: #001F35;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  word-break:break-word;
+}
+
+.previewHighlightPointsCon{
+  margin-bottom: 40px;        
+  margin-top: 2%;
+}
+
+.customBankNameCard{
+  padding:16px;
+}
+
+.customBankNameCard .projDetailsCardHeading{
+  color: #00487C;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.customBankNameCard .projDetailsCardText{
+   color: #242424;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.previewBrochureCard{
+  display: flex;
+  align-items:center;
+  border-radius: 10px;
+  border: 1px solid var(--GREY4, #C9C9C9);
+  background: #FAFAFA;
+  margin-right:auto;
+  padding:12px;
+  gap:10px;
+  margin-top:2%;
+  margin-bottom:4%;
+}
+
+.previewBrochureCard img{
+  width: 174px;
+  height: 145px;
+  flex-shrink: 0;
+}
+
+.previewBrochureCardInner h3{
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom:11px;
+}
+
+.previewBrochureCardInner a{
+  text-decoration:none;
+  color: #0073C6;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration:underline;
+}
+
+.PreviewFaqsBlockCrad{
+  border-bottom: 1px solid rgb(151 151 151 / 50%);
+  margin-bottom:2%;
+}
+
+.PreviewFaqsBlockMainCon div:last-child{
+  border-bottom: none;
+  margin-bottom:0;
+}
+
+.PreviewFaqsBlockCrad h3{
+  color: #242424;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom:1%;
+  word-break:break-word;
+}
+
+
+.PreviewFaqsBlockCrad p{
+  color: #303A42;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  word-break:break-word;
+}
+
+.headingDetailsNameText{
+  color: #001F35 !important;
+  font-size: 22px !important;
+  font-weight: 600 !important;
+  text-transform: capitalize;
+  margin-bottom:8px;
+}
+
+.PreviewSubmitButton{
+  border-radius: 6px;
+  background: var(--Secondary-Blue-1, #0073C6);
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 16px;
+  border:none;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+.PreviewSubmitBtnCon{
+  display: flex;
+  align-items:center;
+  width: 100%;
+  justify-content: center;
+}
+
+.previewBrochureMiniCard{
+  display: flex;
+  align-items:center;
+  border-radius: 10px;
+  border: 1px solid var(--GREY4, #C9C9C9);
+  background: #FAFAFA;
+  margin-right:auto;
+  padding:7px;
+  gap:4px;
+  margin-top:2%;
+  margin-bottom:4%;
+}
+
+.previewBrochureMiniCard img{
+  width: 70px;
+  height: 80px;
+  flex-shrink: 0;
+}
+
+.previewBrochureCardInnerMini h3{
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  display:flex;
+  align-items:center;
+  gap:4px;
+}
+
+.previewShowMoreBtn{
+  border:navajowhite;
+  background:transparent;
+  color: #0073C6;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration-line: underline;
+}
+
+.previewAmenityShowMoreBtn{
+  line-height: 40px; 
+  text-decoration:none
+}
+
+.previewBanksBoxsCon{
+  gap:4%;
+}
+
+.prevwColone{
+  left:0;
+}
+
+.prevPageSuccessPopupBox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.prevPageSuccessPopupInnerBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*  width: 53%; */
+  text-align: center;
+  align-self: center;
+  position: relative;
+  padding-bottom: 80px;
+  width: 60%;
+}
+
+.prevPageSuccessPopupInnerBox img {
+  width: 200px;
+  height: 200px;
+}
+
+.prevPageSuccessPopupInnerBox p {
+  color: var(--Black-3, #505050);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.prevPageSuccessPopupInnerBox span {
+  color: var(--Secondary-Blue-1, #0073c6);
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.previewPagePropertyDetailsMainCon{
+   display: flex;
+  flex-direction: column
+}
+
+.verticalContainer{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.previewDetailsEmptyCon{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.previewPageBottomBtnsAndErrCon {
+  position: relative;
+  top: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 38px;
+}
+
+.previewPagePropertyDetailsMainCon .propertyTypeTableMainCon{
+  width: 90%;
+}
+
+ .previewMinAndMaxMainCon{
+      margin-top:40px;
+  }
+
+.previewAmenityBoxsCon{
+  margin-bottom:40px;
+}
+
+.imageTypeEachImageCon .video-responsive{
+  height: 100%;
+}
+
+.imageTypeSectionImageDisplayBlock .video-responsive{
+   width:100%;
+   height: 100%;
+}
+
+.previewAboutScrollContainer{
+  max-height: 500px;
+  overflow-y: auto;
+  margin-top:16px;
+}
+
+.previewAbout ul, .previewAbout ol{
+  padding-left:50px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+
+/* .previewPropTypeBtnsCon{
+  position: sticky;
+  top: -34px;
+  z-index:2;
+  background: white;
+  padding-top:4px;
+} */
+
+
+/* TAB */
+@media only screen and (min-width: 600px) and (max-width: 1280px) {
+  .imageTypeSectionMainCon{
+    flex-direction:column;
+  }
+
+  .imageTypeSectionImageBoxesBlock,
+  .imageTypeSectionImageDisplayBlock{
+    width:100%;
+  }
+
+  .imageTypeSectionImageBoxesBlock{
+    margin-top:20px;
+  }
+  
+  .defaultImgBoxCon{
+    width: 152px;
+    height: 94px;
+  }
+    
+  .imageTypeEachImage{
+    width: 100%;
+    height: 100%;
+  }
+
+  .previewBrochureMiniCard{
+    border-radius: 5px;
+    margin-right:0;
+    padding:5px;
+    gap:4px;
+    margin-top:0;
+    margin-bottom:0;
+  }
+  
+  .previewBrochureMiniCard img{
+    width: 70px;
+    height: 80px;
+  }
+
+  .prevPageSuccessPopupInnerBox {
+    padding-bottom: 60px;
+    width: 70%;
+  }
+  
+  .prevPageSuccessPopupInnerBox img {
+    width: 150px;
+    height: 150px;
+  }
+
+
+  .prevPageSuccessPopupInnerBox p,
+  .prevPageSuccessPopupInnerBox span {
+    font-size: 20px;
+  }
+
+  /* .previewPropTypeBtnsCon{
+    top: -40px;
+  } */
+}
+
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+  .poetProjPreviewMainCon{
+    padding-top:70px;
+  }
+  
+  .staticHeadingTextsPreviewCon h2{
+    font-size: 18px;
+    margin-bottom:8px;
+  }
+  
+  .staticHeadingTextsPreviewCon span{
+    font-size: 14px !important;
+  }
+
+    .previewProjAndContant h2{
+      font-size: 18px;
+      margin-bottom:8px;
+    }
+
+    .phaseDetailsContant,
+    .previewProjAndContant p{
+      font-size: 14px;
+      line-height:23px;
+    }
+  
+    .previewProjAndContant svg{
+      height:73px;
+    }
+
+    .projectDetailsPreviewBtn,
+    .detailsNameText{
+      font-size:18px;
+    }
+
+    .detailsNameAndEditCon{
+      gap:20px;
+    }
+
+    .projDetailsCardMianCon svg{
+      width:24px;
+    }
+
+    .imageTypeBtn{
+      font-size:14px;
+    }
+
+    .previewAmenityBox,
+    .priceIconWithText,
+    .phaseAndPropShower span,
+    .phaseAndPropShower,
+    .projDetailsCardHeading{
+      font-size:16px;
+    }
+  
+    .dashboardReadMoreSpan,
+    .previewSpecificationsBlock ul li,
+    .customBankNameCard .projDetailsCardHeading,
+    .previewSpecificationsBlock h2,
+    .previewHighlightPoints,
+    .projDetailsCardText,
+    .propsPreviewText,
+    .previewAbout,
+    .phaseDetailsHeading span,
+    .phaseDetailsHeading{
+      font-size: 18px;
+    }
+
+    .previewMinAndMaxMainCon,
+    .projDetailsCardMianCon{
+      margin-top:20px;
+    }
+  
+  .previewMapHaeding{
+    font-size: 18px;
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+  .recenterBtn span{
+    display: none;
+  }
+
+  .phaseDetailsHrLine{
+    margin-top:20px;
+    margin-bottom:20px;
+  }
+
+  .previewPhaseBox{
+    padding:10px;
+  }
+
+  .shortListPropTypeBtn {
+    font-size:14px;
+    padding:6px;
+  }
+
+  .propsPreviewText{
+    margin-bottom:10px;
+  }
+
+  .previewAmenityBox svg,
+  .priceIconWithText svg,
+  .shortListPropTypeBtn svg {
+    width:20px;
+    height:20px;
+  }
+
+  .previewPriseBox .projDetailsCardHeading{
+    font-size: 16px;
+    margin-bottom:0;
+  }
+
+  .imageTypeSectionMainCon{
+    display:flex;
+    flex-direction:column;
+    margin-top:20px;
+  }
+
+  .imageTypeSectionImageDisplayBlock,
+  .imageTypeImageDisplay{
+    width:100%;
+    height: 248px;
+  }
+
+  .imagePreviewTabIcon{
+    padding-right:10px;
+    padding-bottom:10px;
+  }
+  
+  .imagePreviewTabIcon span svg{
+    width: 30px;
+    height: 30px;
+  }
+  
+  .imageTypeSectionImageBoxesBlock .previewTypeBtnsCon{
+    gap:10px;
+    margin-bottom:20px;
+  }
+
+  .imageTypeSectionImageBoxesBlock{
+    width:100%;
+    margin-top:20px;
+  }
+
+  .imageTypeSectionImageBoxesBlock h2{
+    font-size: 20px;
+  }
+
+  .imageTypeEachImageCon{
+    border: 3px solid #0073C6;
+  }
+
+  .defaultImgBoxCon{
+    width: 17%;
+    height: 60px;
+  }
+    
+  .imageTypeEachImage{
+    width: 100%;
+    height: 100%;
+  }
+
+  .previewSpecificationsBlock ul{
+    margin-left:20px;
+  }
+
+  .previewProjAndContant{
+    margin-bottom:36px;
+  }
+
+  .previewBrochureCard,
+  .previewHighlightPointsCon{
+    margin-top:20px;
+  }
+
+  .previewAmenityBox{
+    padding:6px;
+  }
+
+  .previewAmenityBoxsCon,
+  .previewBanksBoxsCon{
+    gap:20px;
+    margin-top:20px;
+  }
+
+  .previewBrochureCard{
+    margin-bottom:20px;
+  }
+
+  .previewAmenityBoxsCon{
+    gap:20px;
+    margin-bottom:36px;
+    margin-top:0;
+  }
+
+  .previewBankCardCon{
+    gap:12px;
+    margin-top: 20px;
+    width: 137px;
+    padding:6px;
+  }
+
+  .customBankNameCard,
+  .previewBankCardCon{
+    margin-top:0;
+  }
+
+    .previewBankCardCon P{
+      font-size:14px;
+    }
+
+  .customBankNameCard .projDetailsCardText{
+    font-size:20px;
+  }
+
+  .headingDetailsNameText{
+    font-size: 18px !important;
+    margin-bottom:6px;
+  }
+
+  .PreviewFaqsBlockCrad p,
+  .PreviewFaqsBlockCrad h3{
+    font-size:18px;
+    margin-bottom:10px;
+  }
+
+  .poetProjPreviewMainCon{
+    padding-bottom:40px;
+      padding-left: 10px;
+      padding-right: 10px;
+  }
+
+   .previewBrochureMiniCard{
+    border-radius: 4px;
+    margin-right:0px;
+    padding:3px;
+    gap:0px;
+    margin-top:0;
+    margin-bottom:0;
+  }
+  
+  .previewBrochureMiniCard img{
+    width: 60px;
+    height: 70px;
+  }
+
+  .previewBrochureCardInnerMini h3{
+    font-size: 12px;
+    gap:2px;
+    margin-right:5px;
+  }
+
+  .previewBrochureCard{
+    border-radius: 4px;
+    padding:0px;
+    gap:0px;
+    margin-top:10px;
+    margin-bottom:36px;
+    padding-right:6px;
+  }
+  
+  .previewBrochureCard img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  .previewBrochureCardInner h3{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom:4px;
+  }
+
+  .previewShowMoreBtn{
+    font-size: 16px;
+  }
+
+  .PreviewSubmitButton{
+      height: auto;
+      border-radius: 4px;
+      font-size: 18px;
+      padding:10px;
+      padding-left:30px;
+      padding-right:30px;
+      width:auto;
+  }
+
+    .prevPageSuccessPopupInnerBox {
+      padding-bottom: 40px;
+      width: 90%;
+    }
+    
+    .prevPageSuccessPopupInnerBox img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .prevPageSuccessPopupInnerBox p,
+    .prevPageSuccessPopupInnerBox span {
+      font-size: 16px;
+    }
+
+    .previewDetailsHoldCon{
+      padding:10px;
+      padding-top:20px;
+      padding-bottom:20px;
+    }
+
+    .previewAboutScrollContainer{
+      max-height: 400px;
+      margin-top:10px;
+    }
+
+    /* .previewPropTypeBtnsCon{
+      top: -20px;
+    } */
+
+}

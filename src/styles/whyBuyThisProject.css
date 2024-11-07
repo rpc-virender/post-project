@@ -1,0 +1,961 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Montserrat;
+  font-style: normal;
+}
+
+.whyBuyThisProjectHeadings {
+  color: #242424;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 23px;
+  margin-bottom: 16px;
+}
+
+#whyBuyThisProject{
+  scroll-margin-top:100px;
+}
+
+.whyBuyThisTextAreaCon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background: #fff;
+  margin-bottom: 10px;
+}
+
+.whyBuyThisTextArea {
+  border: 0.8px solid var(--grey-4, #c9c9c9);
+  width: 100%;
+  height: 223px;
+  padding: 16px 28px;
+  border-radius: 8px;
+  color: var(--black-3, #505050);
+  font-size: 20px;
+  font-weight: 600;
+  resize: none;
+  scroll-margin-bottom:100px;
+}
+
+.whyBuyThisPointsConBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 0.8px solid var(--grey-4, #c9c9c9);
+  background: #fff;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 20px;
+  padding-top:12px;
+  padding-bottom:8px;
+}
+
+.highlitesAddedCon {
+  border: 0.8px solid #148b16;
+}
+
+.bankDetailsHeadingContent {
+  color: #4d6677;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 23px;
+  margin-bottom:16px;
+  position:relative;
+  bottom:6px;
+}
+
+.whyBuyThisPoints {
+  border: none;
+  width: 100%;
+  resize: none;
+  color: #505050;
+  font-size: 20px;
+  font-weight: 600;
+  overflow-y: hidden;
+}
+
+.whyBuyThisplusIcon {
+  width: 19px;
+  height: 19px;
+  flex-shrink: 0;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.whyByThisPointsCount {
+  color: #666;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23px;
+  text-transform: capitalize;
+  width:100%;
+  text-align:right;
+}
+
+.whyBuyThisProjectMainCon {
+  width: 100%;
+  padding-right: 7%;
+  padding-left: 3%;
+  margin-top:67px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
+  scroll-margin-top:100px;
+  padding-top:30px;
+}
+
+.whyBuyThisPointsOuterCon {
+  width: 100%;
+}
+
+.highlightsPlusBtn{
+  color: #0073c6;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  display:flex;
+  border-radius: 4px;
+  border: 0.8px solid #0073C6;
+  background: #FAFAFA;
+  padding:6px;
+  margin-left:auto;
+}
+
+
+.highlitesEditButton {
+  width: 21px;
+  height: 19.5px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.whyBuyThisTextArea:focus,
+.whyBuyThisPoints:focus {
+  outline: none;
+}
+
+.highlitesMaxLimitErrMsg {
+  color: #f00;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: -15px;
+}
+
+.multiSelectedCheckBox {
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  cursor: pointer;
+  margin-right: 14px;
+  accent-color:green;
+}
+
+.newInputcontainerOuterCon {
+  width: 100%;
+  justify-content: center;
+  display: inline-block;
+}
+
+.multiSelectDropdownCon {
+  width: 100%;
+  height: 372px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border-right: 0.6px solid var(--grey-3, #b5abac);
+  border-bottom: 0.6px solid var(--grey-3, #b5abac);
+  border-left: 0.6px solid var(--grey-3, #b5abac);
+  background: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 11px;
+  z-index: 3;
+  position: relative;
+  margin-bottom: -372px;
+  margin-top: -0px;
+}
+
+.citiesArrayCon span {
+  color: #98A5B8;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.dropdownArrow {
+  width: 32px;
+  height: 28px;
+  flex-shrink: 0;
+  position: absolute;
+  left: 90%;
+  transition-duration: 0.5s;
+  pointer-events: none;
+  margin-bottom: -28px;
+  top:10px;
+}
+
+.banksMultiSelectedDropdownOuterCon:hover {
+  .multiSelectDropdownCon {
+    display: flex;
+  }
+  .dropdownArrow {
+    transform: rotate(180deg);
+  }
+}
+
+.multiSelectDropdownItemsCon {
+  height: 100%;
+  /* max-height: 290px; */
+  overflow-y: scroll;
+  width: 100%;
+  margin-bottom:10px;
+}
+
+.highlightsAndCountCon{
+  display:flex;
+  margin-top:20px;
+}
+
+.multiSelectDropdownItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding:10px;
+  border-top:1px solid #C4C4C4;
+  padding-left:24px;
+}
+
+ .multiSelectDropdownItem:hover{
+    background: var(--secondary-blue-light, #ECF7FF);
+  }
+
+.multiSelectDropdownItem label {
+  margin-left: 0px;
+  cursor: pointer;
+  color: #333;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.banksMultiSelectedDropdownOuterCon,
+.branchMultiSelectedDropdownOuterCon {
+  width: 40%;
+  max-width:564px;
+}
+
+.banksMultiSelectedDropdownOuterCon {
+  margin-bottom: 3%;
+  margin-top: 1%;
+}
+
+.branchMultiSelectedDropdownCon {
+  border-radius: 6px;
+  border: 0.6px solid #98a5b8;
+  background: #fff;
+  height: 48px;
+  margin-top: 16px;
+  position:relative;
+}
+
+.customBankNameInputBlock {
+  width: 100%;
+  border-radius: 8px;
+  border:0.8px solid var(--GREY4, #C9C9C9);
+  background: #fff;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  max-width:564px;
+}
+
+.customBankNameInputCon,
+.customBankNameInputOuterCon {
+  width: 100%;
+}
+
+.customBankNameInput {
+  width: 100%;
+  padding: 1%;
+  border: none;
+  border-radius: 8px;
+  color: #333;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.customBhkNameBox {
+  border-radius: 10px;
+  border: 1px solid #92b2c8;
+  background: #fff;
+  box-shadow: 0px 4px 10px 0px rgba(202, 233, 255, 0.3);
+  display: flex;
+  justify-content: flex-center;
+  align-items: flex-center;
+  padding: 8px;
+  gap: 8px;
+  margin-bottom: 1%;
+}
+
+.customBhkNameBox span {
+  color: #001f35;
+  font-size: 14px;
+  font-weight: 500;
+  padding-top: 4px;
+}
+
+.customBankAddBtnCon{
+  display:flex;
+  justify-content:flex-end;
+  align-items:flex-end;
+  max-width:564px;
+  margin-bottom:40px;
+  margin-bottom: none;
+}
+
+.customBhkNameBoxsCon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.faqQuesAndAnsCon {
+  margin-top: 16px;
+}
+
+.faqQuestionInput {
+  width: 100%;
+  border-radius: 8px;
+  border: 0.8px solid var(--GREY4, #C9C9C9);
+  background: #fff;
+  color: #333;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 12px;
+  resize: none;
+}
+
+.faqAnswerInput {
+  min-height: 140px;
+}
+
+.faqQuestionInputCon,
+.faqQuestionInputOuterCon {
+  width: 100%;
+}
+
+.faqQuestionInputOuterCon{
+  margin-bottom:10px;
+}
+
+.faqAnswerCon,
+.faqQuestionInputCon {
+  margin-top: 16px;
+}
+
+.faqQuestionInputLable {
+  color: #333;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.faqQuestionHeading {
+  color: #148b16;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 23px;
+  margin-bottom: 1%;
+}
+
+.faqQuestionBtnsCon {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  width: 100%;
+  gap: 2%;
+  margin-top: 4px;
+}
+
+.questionSaveBtn {
+  border-radius: 8px;
+  border: 1px solid #0073c6;
+  background: #0073c6;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 8px;
+}
+
+
+.multiBanksLable {
+  color: #333;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 23px;
+}
+
+.customBanksErrMsg {
+  margin-top: 15px;
+}
+
+.faqsErrMsg {
+  font-size:18px;
+  margin-top:2px;
+}
+
+.pdfPopupinnerPopupCon {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pdfPopupheadingAndCrossCon {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  height: 57px;
+  background: #ededed;
+  position: absolute;
+  top: 0;
+  padding-left: 3%;
+  padding-right: 3%;
+  z-index:1
+}
+
+.pdfPopupheadingAndCrossCon h3 {
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pdfPopupBottomCon {
+  width: 100%;
+  height: 85vh;
+  margin-top:-30px !important;
+  top: 28px;
+  position: relative;
+}
+
+.pdfDisplayIframe {
+  width: 100%;
+  height: 100%;
+}
+
+.pdfPopupCrossIcon {
+  cursor: pointer;
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.pdfPopupRightSideCon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.pdfPopupRightSideCon p {
+  color: var(--Black-2, #333);
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pdfPopupUploadButton {
+  border-radius: 5px;
+  background: #0073c6;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 4px;
+  margin-left: 2%;
+  margin-right: 4%;
+  white-space: nowrap;
+  display:flex;
+  align-items:center;
+  gap:6px;
+  padding-left:6px;
+  padding-right:6px;
+}
+
+.citiesArrayCon{
+  width:80%;
+  position:relative;
+  top:12px;
+  left:10px;
+}
+
+.citiesArrayCon span{
+  font-size: 18px;
+}
+
+.pdfPopupDeleteIconCss{
+  cursor: pointer;
+}
+
+.faqsPointsCount{
+  color: #666;
+  font-feature-settings: "clig" off, "liga" off;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  text-transform: capitalize;
+  text-align:right;
+  white-space:nowrap;
+}
+
+.faqsBottonContent{
+  color: #045087;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 23px; 
+}
+
+.customBankNameInputOuterMainCon{
+  width: 100%;
+}
+
+.banksMultiSelectedDropdownOuterCon:hover .citiesArrayCon span{
+    opacity: 0;
+}
+
+.staticHeadingWhyCon{
+  margin-bottom: 3%;
+}
+
+.highlitesMaxLimitErrMsgDisplayCon{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  gap:10px;
+}
+
+.highlightsErrText{
+  color:#f00;
+}
+
+.faqQuestionInput:focus,
+.customBankNameInput:focus {
+  outline: none;
+}
+
+.singleSelectDropdownSearchFieldCon svg{
+  margin-right:5px;
+}
+
+.highlitePointsCount{
+  margin-bottom:0px;
+  margin-top:0px;
+  font-weight:600;
+}
+
+.phaseBrochureFieldCon{
+  color: #242424;
+  font-size: 18px;
+  font-weight: 600;
+  background: #FFFBDF;
+
+  display:flex;
+  align-items:center;
+  border-radius: 10px;
+  border: 1px solid #C7A700;
+  background: linear-gradient(90deg, #FFED8F 0%, #FFFBE3 100%);
+  box-shadow: 0px 4px 15.4px 0px rgba(255, 214, 0, 0.10);
+  padding:10px;
+  margin-bottom:20px;
+  margin-right:auto;
+  gap:18px;
+}
+
+.phaseBrochureLable{
+  padding:4px;
+  display: flex;
+  align-items:center;
+  gap:2px;
+  padding-left:6px;
+  padding-right:6px;
+  margin:0;
+}
+
+.isPhaseBroucherFieldCon,
+.phaseBrochureIconsCon{
+  display: flex;
+  align-items:center;
+}
+
+.phaseBrochureIconsCon label{
+  position: relative;
+  top:2px;
+}
+
+.phaseBrochureIconsCon svg{
+  margin-left:6px;
+}
+
+.phaseBrochuresInputsCon{
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+}
+
+.isPhaseBroucherField{
+  height:20px;
+  width:20px;
+  accent-color: green;
+  cursor: pointer;
+}
+
+.isPhaseBroucherFieldCon{ 
+  gap:4px;
+  align-items: flex-start;
+}
+
+.isPhaseBroucherFieldLable{
+  color: #242424;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  user-select: none;
+  cursor: pointer;
+}
+
+/* Tabs */
+@media only screen and (min-width: 601px) and (max-width: 1280px) {
+  .customBankNameInputBlock,
+  .banksMultiSelectedDropdownOuterCon,
+  .branchMultiSelectedDropdownOuterCon {
+    width: 100%;
+  }
+
+  .pdfPopupUploadButton{
+    display:flex;
+  }
+
+  .pdfPopupBottomCon {
+    margin-top:50px;
+  }
+
+  .highlightsPlusBtn{
+    font-size: 16px;
+  }
+
+   .whyBuyThisProjectMainCon {
+    margin-top:60px;
+     padding-right: 30px;
+  }
+
+  .multiBanksLable,
+  .whyBuyThisProjectHeadings {
+    font-size: 20px;
+  }
+
+  .whyBuyThisTextArea{
+    font-size:18px;
+    height: 223px;
+    padding: 14px 20px;
+    border-radius: 4px;
+  }
+
+  .whyBuyThisPoints{
+    font-size: 18px;
+  }
+
+  .highlitesEditButton,
+  .whyBuyThisplusIcon {
+    width: 18px;
+    height: 18px;
+    margin-right:10px;
+  }
+
+  .whyBuyThisPointsConBox {
+    border-radius: 4px;
+  }
+
+  .customBankNameInput{
+    padding:0;
+  }
+
+  .whyBuyThisProjectMainCon .postProjectMidiaMainCon{
+    margin-bottom:40px;
+  }
+
+  .broucherImgSize{
+    height: 200px;
+  }
+
+  .isPhaseBroucherFieldLable,
+  .phaseBrochureFieldCon{
+    font-size: 16px;
+  }
+
+}
+
+/* 50% */
+@media only screen and (max-width: 600px) {
+  .customBankNameInputBlock,
+  .banksMultiSelectedDropdownOuterCon,
+  .branchMultiSelectedDropdownOuterCon {
+    width: 100%;
+  }
+
+  .pdfPopupRightSideCon p {
+    font-size: 16px;
+  }
+
+  .pdfPopupheadingAndCrossCon h3 {
+    font-size: 16px;
+  }
+
+  .pdfPopupDeleteIconCss svg{
+    width: 31.031px;
+    height: 31.031px;
+  }
+
+  .pdfPopupCrossIcon{
+    width: 24px;
+    height: 24px;
+  }
+
+  .whyByThisPointsCount,
+  .faqsPointsCount,
+  .bankDetailsHeadingContent,
+  .faqsBottonContent{
+    font-size:12px !important;
+  }
+
+  .bankDetailsHeadingContent {
+    margin-bottom:0px;
+    bottom:12px;
+  }
+
+  .pdfPopupUploadButton{
+    display:none
+  }
+
+  .pdfPopupBottomCon {
+    width: 100%;
+    height: 85vh;
+    margin-top:50px;
+  }
+
+  .citiesArrayCon span,
+  .whyBuyThisProjectHeadings,
+  .faqQuestionHeading,
+  .multiBanksLable,
+  .faqQuestionInputLable{
+    font-size:16px;
+  }
+
+  .branchMultiSelectedDropdownCon{
+    height:40px;
+  }
+
+  .citiesArrayCon{
+    top:10px;
+  }
+
+  .customBhkNameBox span {
+    position:relative;
+    top:10px;
+  }
+
+  .customBhkNameBox {
+    padding: 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:20px;
+  }
+
+  .faqQuestionInput {
+    padding-left: 16px;
+    padding:6px;
+    font-size:16px;
+    border-radius:4px;
+  }
+
+  .whyBuyThisProjectMainCon {
+    margin-top:54px;
+    padding:10px;
+    padding-top:20px;
+  }
+
+   .highlightsPlusBtn{
+    font-size: 14px;
+     padding:4px;
+  }
+
+  .whyBuyThisTextArea {
+    height: 120px;
+    padding: 12px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  .whyBuyThisTextAreaCon {
+    margin-bottom: 0px;
+  }
+
+  .whyBuyThisPointsConBox {
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding:8px;
+  }
+
+  .whyBuyThisPoints {
+    font-size: 16px;
+  }
+
+  .customBhkNameBoxsCon {
+    margin-top:0;
+  }
+
+  #projectDetailsBankApprovalsBlock{
+    margin-top:20px
+  }
+
+  .highlitesEditButton,
+  .whyBuyThisplusIcon {
+    width: 15px;
+    height: 15px;
+    margin-right:10px;
+  }
+
+  .highlitePointsCount{
+    margin-bottom:0px;
+  }
+
+  .dropdownArrow {
+    width: 25px;
+    height: 25px;
+    bottom: 12px;
+    left: 88%;
+  }
+
+  .multiSelectDropdownItem {
+    padding:6px;
+    padding-left:10px;
+  }
+
+  .multiSelectedCheckBox {
+    min-width: 15px;
+    min-height: 15px;
+    max-width: 15px;
+    max-height: 15px;
+    margin-right: 10px;
+  }
+
+  .multiSelectDropdownItem label {
+    font-size: 16px;
+  }
+
+  .singleSelectDropdownSearchFieldCon svg{
+    margin-right:5px;
+    margin-top:2px !important;
+  }
+
+  .multiSelectDropdownCon {
+    height: 280px;
+    padding-top: 11px;
+    position: relative;
+    margin-bottom: -280px;
+    margin-top: -0px;
+  }
+
+  .customBankNameInputBlock {
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .customBankNameInput {
+    width: 100%;
+    padding: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  .faqQuesAndAnsCon {
+    margin-top: 10px;
+  }
+
+  .faqQuestionHeading{
+    margin-bottom:12px;
+  }
+
+  .faqAnswerCon,
+  .faqQuestionInputCon {
+    margin-top: 10px;
+  }
+
+  .bankDetailsHeadingContent {
+    line-height: 14px;
+    margin-bottom:0px;
+    bottom:6px;
+  }
+
+  .whyBuyThisProjectMainCon .postProjectMidiaMainCon{
+    margin-bottom:36px;
+  }
+  
+  .customBanksErrMsg {
+    font-size:14px;
+    margin-top:0;
+    position:relative;
+    bottom:24px
+  }
+
+  .isPhaseBroucherFieldLable,
+  .faqsErrMsg{
+    font-size:14px;
+  }
+
+  .phaseBrochureFieldCon{
+    font-size: 14px;
+    padding:6px;
+    gap:10px;
+    flex-wrap: wrap;
+  }
+
+
+}
