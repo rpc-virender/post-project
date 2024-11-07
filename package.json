@@ -25,7 +25,8 @@
     "build:start": "npx serve -s build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "postbuild": "react-snap"
+    "postbuild": "react-snap",
+    "link" : ""
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +47,10 @@
     ]
   },
   "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-react": "^7.37.2",
+    "globals": "^15.12.0",
     "react-snap": "^1.23.0"
   }
 }
