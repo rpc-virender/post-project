@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import PostProject from "./postProject"; // Assuming this is your PostProject component
+// import PostProject from "./postProject"; // Assuming this is your PostProject component
 
 // Fake Dashboard Component
 const Dashboard = () => {
@@ -17,6 +17,14 @@ const PostProperty = () => {
   return (
     <div>
       <h1>Post Property</h1>
+      <p>This is the Post Property page</p>
+    </div>
+  );
+};
+const PostProject = () => {
+  return (
+    <div>
+      <h1>Post Project</h1>
       <p>This is the Post Property page</p>
     </div>
   );
