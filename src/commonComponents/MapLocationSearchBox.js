@@ -124,7 +124,7 @@ export default function MapLocationSearchBox({lat, lan, setBasicDetails, id}) {
             setState({map: map, marker: marker0 });
         })
    
-    },[lat,lan]);
+    },[lat, lan]);
 
     const getCenter = () =>{
         if(state && state.map ){

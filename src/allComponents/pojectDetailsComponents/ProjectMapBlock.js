@@ -2,7 +2,7 @@ import React, { Fragment, memo, useEffect, useState } from 'react';
 import $ from 'jquery';
 
 import Input from '../../commonComponents/Input';
-import MapLocationSearchBox from '../../commonComponents/MapLocationSearchBox';
+// import MapLocationSearchBox from '../../commonComponents/MapLocationSearchBox';
 
 const ProjectMapBlock = ({data, onChange, setBasicDetails}) => {
     const [mapSearchValue, setMapSearchValue] = useState($("selectByLocation_2").val());
@@ -14,7 +14,7 @@ const ProjectMapBlock = ({data, onChange, setBasicDetails}) => {
             setMapSearchValue("");
         }
     },[data.address]);
-    
+
 
     return (
         <Fragment>
@@ -62,12 +62,12 @@ const ProjectMapBlock = ({data, onChange, setBasicDetails}) => {
                         name="latitude"
                         onChange={onChange}
                         type="number"
-                        className={`animatedInput numberInputField ${data.latitude != undefined && data.latitude != null && data.latitude != "" && data.latitude != 0 ? "validInput" : ""}`}
+                        className={`animatedInput numberInputField ${data.latitude !== undefined && data.latitude != null && data.latitude !== "" && data.latitude !== 0 ? "validInput" : ""}`}
                         containerClassName="input-field"
                         inputOuterContainerClassName="PDinputOuterContainerClassName"
                         label2="Latitude"
-                        labelClassName2={`animatedLabel ${data.latitude != undefined && data.latitude != null && data.latitude != ""  ? "latLongInputsLable" : ""}`}
-                        value={data.latitude != undefined && data.latitude != null ? data.latitude : ""}   
+                        labelClassName2={`animatedLabel ${data.latitude !== undefined && data.latitude != null && data.latitude !== ""  ? "latLongInputsLable" : ""}`}
+                        value={data.latitude !== undefined && data.latitude != null ? data.latitude : ""}   
                         maxCheracterLimit={32}
                         inputMode="numeric"
                     />
@@ -79,12 +79,12 @@ const ProjectMapBlock = ({data, onChange, setBasicDetails}) => {
                         name="longtitude"
                         onChange={onChange}
                         type="number"
-                        className={`animatedInput ${data.longtitude != undefined && data.longtitude != null && data.longtitude != "" && data.longtitude != 0 ? "validInput" : ""}`}
+                        className={`animatedInput ${data.longtitude !== undefined && data.longtitude != null && data.longtitude !== "" && data.longtitude !== 0 ? "validInput" : ""}`}
                         containerClassName="input-field"
                         inputOuterContainerClassName="PDinputOuterContainerClassName"
                         label2="Longitude"
-                        labelClassName2={`animatedLabel ${data.longtitude != undefined && data.longtitude != null &&  data.longtitude != ""? "latLongInputsLable" : ""}`}
-                        value={data.longtitude != undefined && data.longtitude != null ? data.longtitude : ""}   
+                        labelClassName2={`animatedLabel ${data.longtitude !== undefined && data.longtitude != null &&  data.longtitude !== ""? "latLongInputsLable" : ""}`}
+                        value={data.longtitude !== undefined && data.longtitude != null ? data.longtitude : ""}   
                         maxCheracterLimit={32} 
                         inputMode="numeric"              
                     />
